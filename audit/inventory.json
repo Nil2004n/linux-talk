@@ -1,0 +1,3603 @@
+{
+ "colors": [
+  {
+   "color": "rgb(236,237,239)",
+   "uses": 612,
+   "tags": [
+    "h2",
+    "p",
+    "h3",
+    "li",
+    "button",
+    "code",
+    "pre"
+   ],
+   "scenes": 62
+  },
+  {
+   "color": "rgb(20,21,26)",
+   "uses": 610,
+   "tags": [
+    "h2",
+    "p",
+    "h3",
+    "li",
+    "button",
+    "code",
+    "pre"
+   ],
+   "scenes": 62
+  },
+  {
+   "color": "rgb(164,167,174)",
+   "uses": 452,
+   "tags": [
+    "p",
+    "pre",
+    "button"
+   ],
+   "scenes": 61
+  },
+  {
+   "color": "rgb(85,87,95)",
+   "uses": 451,
+   "tags": [
+    "p",
+    "pre",
+    "button"
+   ],
+   "scenes": 61
+  },
+  {
+   "color": "rgb(107,109,117)",
+   "uses": 390,
+   "tags": [
+    "p",
+    "button",
+    "code"
+   ],
+   "scenes": 62
+  },
+  {
+   "color": "rgb(135,140,150)",
+   "uses": 390,
+   "tags": [
+    "p",
+    "button",
+    "code"
+   ],
+   "scenes": 62
+  },
+  {
+   "color": "rgb(11,110,110)",
+   "uses": 16,
+   "tags": [
+    "button",
+    "pre"
+   ],
+   "scenes": 2
+  },
+  {
+   "color": "rgb(79,209,197)",
+   "uses": 16,
+   "tags": [
+    "button",
+    "pre"
+   ],
+   "scenes": 2
+  },
+  {
+   "color": "rgb(179,38,30)",
+   "uses": 14,
+   "tags": [
+    "p"
+   ],
+   "scenes": 3
+  },
+  {
+   "color": "rgb(242,118,110)",
+   "uses": 14,
+   "tags": [
+    "p"
+   ],
+   "scenes": 3
+  },
+  {
+   "color": "rgb(31,122,77)",
+   "uses": 10,
+   "tags": [
+    "pre",
+    "p"
+   ],
+   "scenes": 4
+  },
+  {
+   "color": "rgb(91,196,138)",
+   "uses": 10,
+   "tags": [
+    "pre",
+    "p"
+   ],
+   "scenes": 4
+  },
+  {
+   "color": "rgb(147,90,0)",
+   "uses": 2,
+   "tags": [
+    "p"
+   ],
+   "scenes": 1
+  },
+  {
+   "color": "rgb(224,168,79)",
+   "uses": 2,
+   "tags": [
+    "p"
+   ],
+   "scenes": 1
+  }
+ ],
+ "typography": [
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "24px",
+   "uses": 344,
+   "examples": [
+    "1-hook <p> One inventor made the kernel and the ver",
+    "3-why-linux <p> Four properties make it the engineer’s d",
+    "3-why-linux <p> No licence. Readable, auditable code."
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "16px",
+   "uses": 280,
+   "examples": [
+    "2-part-a <p> Section 1: Why Linux",
+    "5-cpu-architectures <p> x86_64",
+    "7-choose-your-os <li> 1\n\nTime spent fixing your OS?\n\nNone, it "
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "13.6px",
+   "uses": 256,
+   "examples": [
+    "0-boot <p> 1 / 62",
+    "1-hook <p> 2 / 62",
+    "2-part-a <p> 3 / 62"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "15.2px",
+   "uses": 246,
+   "examples": [
+    "0-boot <p> intro / 1 · Opening · boot sequence",
+    "1-hook <p> intro / 2 · The hook",
+    "3-why-linux <p> A / 4 · Part A · topic 1"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "48px",
+   "uses": 206,
+   "examples": [
+    "1-hook <h2> Linux runs the internet. The terminal is",
+    "3-why-linux <h2> Why use Linux\nWhy use Linux",
+    "4-why-linux-vs-windows <h2> Better for developers and servers\nBetter"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "22.4px",
+   "uses": 198,
+   "examples": [
+    "1-hook <p> $ uname -a",
+    "1-hook <p> $ ▊\nTerminal script complete",
+    "1-hook <p> $ git log --oneline"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "16.8px",
+   "uses": 137,
+   "examples": [
+    "1-hook <pre> Linux student 6.8.0-generic x86_64 GNU/L",
+    "1-hook <pre> a1b2c3d Add homepage\n9f8e7d6 Fix header",
+    "11-navigation <pre> /home/student/site"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "12.48px",
+   "uses": 128,
+   "examples": [
+    "1-hook <button> replay terminal",
+    "1-hook <button> replay terminal",
+    "4-why-linux-vs-windows <button> Reveal answer"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "32px",
+   "uses": 122,
+   "examples": [
+    "3-why-linux <p> Free and open",
+    "3-why-linux <p> Scriptable",
+    "3-why-linux <p> Lightweight"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "12.8px",
+   "uses": 116,
+   "examples": [
+    "7-choose-your-os <p> Your result appears here",
+    "34-c2-scheduler-sim <button> FCFS",
+    "34-c2-scheduler-sim <button> SJF"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "16px",
+   "uses": 84,
+   "examples": [
+    "17-permissions <button> r",
+    "17-permissions <button> w",
+    "17-permissions <button> x"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "12px",
+   "uses": 76,
+   "examples": [
+    "0-boot <p> laptop login: student",
+    "7-choose-your-os <p> Which distro are you?",
+    "31-c2-title <p> Part C2 · Inside the OS"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "14px",
+   "uses": 66,
+   "examples": [
+    "4-why-linux-vs-windows <p> Verdict: Linux is the better tool for de",
+    "7-choose-your-os <p> A / 8 · Part A · topic 5",
+    "15-no-mouse-challenge <p> keyboard only"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "11.52px",
+   "uses": 52,
+   "examples": [
+    "4-why-linux-vs-windows <p> Question",
+    "5-cpu-architectures <p> desktop and server classic",
+    "5-cpu-architectures <p> phones, small boards, efficient cloud"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "26.4px",
+   "uses": 48,
+   "examples": [
+    "2-part-a <p> Why use Linux · why it beats Windows for",
+    "10-part-b <p> Navigation · the directory tree · files ",
+    "14-editing-files <p> mousepad handles quick graphical edits."
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "20px",
+   "uses": 28,
+   "examples": [
+    "5-cpu-architectures <p> $ uname -m",
+    "15-no-mouse-challenge <code> $\nmkdir -p site",
+    "15-no-mouse-challenge <code> $\nnano site/index.html"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "13.6px",
+   "uses": 28,
+   "examples": [
+    "27-containers <p> frozen filesystem",
+    "27-containers <p> repo plus dependencies",
+    "27-containers <p> thrown away after the job"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "17.758px",
+   "uses": 28,
+   "examples": [
+    "5-cpu-architectures <p> $ uname -m",
+    "15-no-mouse-challenge <code> $\nmkdir -p site",
+    "15-no-mouse-challenge <code> $\nnano site/index.html"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "16.8px",
+   "uses": 26,
+   "examples": [
+    "5-cpu-architectures <p> Intel and AMD laptops, lab PCs and most ",
+    "5-cpu-architectures <p> Android phones, Raspberry Pi boards and ",
+    "5-cpu-architectures <p> An openly specified CPU design anyone ma"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "23.2px",
+   "uses": 26,
+   "examples": [
+    "6-distro-types <li> –\nlinux kernel\nshared foundation\n·\nDebia",
+    "6-distro-types <button> –\nlinux kernel",
+    "6-distro-types <li> ·\nDebian family\nUbuntu · Mint · Kali · a"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "20.49px",
+   "uses": 26,
+   "examples": [
+    "6-distro-types <li> –\nlinux kernel\nshared foundation\n·\nDebia",
+    "6-distro-types <button> –\nlinux kernel",
+    "6-distro-types <li> ·\nDebian family\nUbuntu · Mint · Kali · a"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "500",
+   "size": "24px",
+   "uses": 22,
+   "examples": [
+    "7-choose-your-os <p> Time spent fixing your OS?",
+    "7-choose-your-os <p> What do you work with?",
+    "7-choose-your-os <p> How do you learn best?"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "24px",
+   "uses": 20,
+   "examples": [
+    "2-part-a <p> Part A",
+    "10-part-b <p> Part B",
+    "21-part-c <p> Part C"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "112px",
+   "uses": 20,
+   "examples": [
+    "2-part-a <h2> Why Linux",
+    "10-part-b <h2> Terminal fundamentals",
+    "21-part-c <h2> Servers and system"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "14.4px",
+   "uses": 20,
+   "examples": [
+    "7-choose-your-os <button> answer 5 more",
+    "34-c2-scheduler-sim <button> ✕",
+    "34-c2-scheduler-sim <button> ✕"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "15.026px",
+   "uses": 20,
+   "examples": [
+    "15-no-mouse-challenge <p> make a folder",
+    "15-no-mouse-challenge <p> create the page",
+    "15-no-mouse-challenge <p> preview it"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "500",
+   "size": "26.4px",
+   "uses": 16,
+   "examples": [
+    "4-why-linux-vs-windows <p> If Windows has great apps and games, why",
+    "6-distro-types <p> If the kernel is shared, why do distros ",
+    "13-files-directories <p> What happens if rm runs in the wrong fol"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "14px",
+   "uses": 16,
+   "examples": [
+    "17-permissions <p> chmod 755 is executable for everyone; ke",
+    "18-text-processing <p> stdout of one command becomes stdin of t",
+    "55-pipeline-yaml <p> Written with OpenCode. Pin every action "
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "14.4px",
+   "uses": 16,
+   "examples": [
+    "43-c2-fault-kinds <p> Page is already in RAM, just not mapped ",
+    "43-c2-fault-kinds <p> Page must be read from disk. Slow — the ",
+    "43-c2-fault-kinds <p> Illegal access. Ends in “Segmentation fa"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "24px",
+   "uses": 16,
+   "examples": [
+    "56-poisonous-vs-healthy <h3> Poisonous push",
+    "56-poisonous-vs-healthy <h3> Healthy push",
+    "56-poisonous-vs-healthy <h3> Poisonous push"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "40px",
+   "uses": 12,
+   "examples": [
+    "7-choose-your-os <h2> Choosing your OS\nChoosing your OS",
+    "7-choose-your-os <h2> Choosing your OS\nChoosing your OS",
+    "7-choose-your-os <h2> Choosing your OS\nChoosing your OS"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "13.12px",
+   "uses": 12,
+   "examples": [
+    "17-permissions <p> the user who owns the file",
+    "17-permissions <p> accounts in the file group",
+    "17-permissions <p> everyone else"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "11.2px",
+   "uses": 12,
+   "examples": [
+    "34-c2-scheduler-sim <p> Processes · arrival / burst / priority",
+    "43-c2-fault-kinds <p> not all faults are equal",
+    "45-c2-paging-sim <p> one picture"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "10.88px",
+   "uses": 12,
+   "examples": [
+    "34-c2-scheduler-sim <p> ready queue",
+    "34-c2-scheduler-sim <p> cpu",
+    "34-c2-scheduler-sim <p> done"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "16.32px",
+   "uses": 12,
+   "examples": [
+    "53-link-repo <p> GitHub receives main",
+    "53-link-repo <p> Platform builds Vite into dist/",
+    "53-link-repo <p> Live URL answers 200"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "14.7528px",
+   "uses": 12,
+   "examples": [
+    "53-link-repo <p> GitHub receives main",
+    "53-link-repo <p> Platform builds Vite into dist/",
+    "53-link-repo <p> Live URL answers 200"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "23.222px",
+   "uses": 10,
+   "examples": [
+    "5-cpu-architectures <h3> x86_64",
+    "5-cpu-architectures <h3> ARM",
+    "5-cpu-architectures <h3> RISC-V"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "16.392px",
+   "uses": 10,
+   "examples": [
+    "18-text-processing <code> cat access.log",
+    "18-text-processing <code> grep 404",
+    "18-text-processing <code> sort"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "31.392px",
+   "uses": 10,
+   "examples": [
+    "38-c2-disk-algos <p> FCFS",
+    "38-c2-disk-algos <p> SSTF",
+    "38-c2-disk-algos <p> SCAN"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "23.2px",
+   "uses": 8,
+   "examples": [
+    "9-linus-torvalds <h3> Linux",
+    "9-linus-torvalds <h3> The kernel grows up",
+    "9-linus-torvalds <h3> Git"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "17.6px",
+   "uses": 8,
+   "examples": [
+    "9-linus-torvalds <p> Student Linus Torvalds announces a hobby",
+    "9-linus-torvalds <p> A hobby project becomes internet infrast",
+    "9-linus-torvalds <p> Torvalds writes distributed version cont"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "19.2px",
+   "uses": 8,
+   "examples": [
+    "18-text-processing <code> cat access.log",
+    "18-text-processing <code> grep 404",
+    "18-text-processing <code> sort"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "20.49px",
+   "uses": 8,
+   "examples": [
+    "9-linus-torvalds <h3> Linux",
+    "9-linus-torvalds <h3> The kernel grows up",
+    "9-linus-torvalds <h3> Git"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "15.709px",
+   "uses": 8,
+   "examples": [
+    "9-linus-torvalds <p> Student Linus Torvalds announces a hobby",
+    "9-linus-torvalds <p> A hobby project becomes internet infrast",
+    "9-linus-torvalds <p> Torvalds writes distributed version cont"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "18px",
+   "uses": 8,
+   "examples": [
+    "18-text-processing <p> $ grep \" 500 \" access.log | wc -l",
+    "18-text-processing <p> $ cut -d\" \" -f1 access.log | sort | uniq",
+    "61-take-home-launch <p> $ echo \"Thank you\""
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "13.9332px",
+   "uses": 8,
+   "examples": [
+    "55-pipeline-yaml <pre> name: ci # pipeline name\non: [push, pull",
+    "55-pipeline-yaml <code> name: ci # pipeline name\non: [push, pull",
+    "59-pipeline-attack-surface <pre> permissions: \n  contents: read # smalles"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "24.8px",
+   "uses": 6,
+   "examples": [
+    "5-cpu-architectures <h3> x86_64",
+    "5-cpu-architectures <h3> ARM",
+    "5-cpu-architectures <h3> RISC-V"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "16.8px",
+   "uses": 6,
+   "examples": [
+    "15-no-mouse-challenge <p> no IDE, no autocomplete",
+    "15-no-mouse-challenge <p> this is the muscle memory part",
+    "15-no-mouse-challenge <p> then I will help"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "15.2992px",
+   "uses": 6,
+   "examples": [
+    "5-cpu-architectures <p> Intel and AMD laptops, lab PCs and most ",
+    "5-cpu-architectures <p> Android phones, Raspberry Pi boards and ",
+    "5-cpu-architectures <p> An openly specified CPU design anyone ma"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "15.026px",
+   "uses": 6,
+   "examples": [
+    "15-no-mouse-challenge <p> no IDE, no autocomplete",
+    "15-no-mouse-challenge <p> this is the muscle memory part",
+    "15-no-mouse-challenge <p> then I will help"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "21.4592px",
+   "uses": 6,
+   "examples": [
+    "26-shell-scripting <p> $ cat build.sh",
+    "26-shell-scripting <p> $ ./build.sh",
+    "26-shell-scripting <p> $ ▊\nTerminal script complete"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "22.1088px",
+   "uses": 6,
+   "examples": [
+    "36-c2-proof-cpu <p> $ uname -r",
+    "36-c2-proof-cpu <p> $ ps -eo pid,ni,pri,comm --sort=-pri | h",
+    "36-c2-proof-cpu <p> $ nice -n 1▊"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "72px",
+   "uses": 4,
+   "examples": [
+    "0-boot <h2> Linux and the Terminal: from first comma",
+    "0-boot <h2> Linux and the Terminal: from first comma",
+    "0-boot <h2> Linux and the Terminal: from first comma"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "28px",
+   "uses": 4,
+   "examples": [
+    "0-boot <p> A live online session for first-year eng",
+    "0-boot <p> A live online session for first-year eng",
+    "0-boot <p> A live online session for first-year eng"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "13.12px",
+   "uses": 4,
+   "examples": [
+    "0-boot <p> presented by YOUR NAME",
+    "0-boot <p> presented by YOUR NAME",
+    "0-boot <p> presented by YOUR NAME"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "15.2px",
+   "uses": 4,
+   "examples": [
+    "7-choose-your-os <p> Five questions, one honest answer about ",
+    "7-choose-your-os <p> Five questions, one honest answer about ",
+    "7-choose-your-os <p> Five questions, one honest answer about "
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "25.6px",
+   "uses": 4,
+   "examples": [
+    "15-no-mouse-challenge <h3> Do this",
+    "15-no-mouse-challenge <h3> Not allowed",
+    "15-no-mouse-challenge <h3> Do this"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "20.8px",
+   "uses": 4,
+   "examples": [
+    "34-c2-scheduler-sim <p> P2",
+    "34-c2-scheduler-sim <p> P2",
+    "34-c2-scheduler-sim <p> P2"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "14.72px",
+   "uses": 4,
+   "examples": [
+    "39-c2-disk-sim <p> Spinning platters must physically seek: ",
+    "39-c2-disk-sim <p> Spinning platters must physically seek: ",
+    "39-c2-disk-sim <p> Spinning platters must physically seek: "
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "14.72px",
+   "uses": 4,
+   "examples": [
+    "56-poisonous-vs-healthy <pre> $ git commit -m \"config\"\n$ git push orig",
+    "56-poisonous-vs-healthy <pre> $ git commit -m \"config\"\n$ git push orig",
+    "56-poisonous-vs-healthy <pre> $ git commit -m \"config\"\n$ git push orig"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "17.6px",
+   "uses": 4,
+   "examples": [
+    "56-poisonous-vs-healthy <p> Deploy blocked",
+    "56-poisonous-vs-healthy <p> Live without leaking secrets",
+    "56-poisonous-vs-healthy <p> Deploy blocked"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "16.0944px",
+   "uses": 4,
+   "examples": [
+    "26-shell-scripting <pre> #!/usr/bin/env bash\nset -euo pipefail\n\nT",
+    "26-shell-scripting <pre> checking src\nchecking public\nno output",
+    "26-shell-scripting <pre> #!/usr/bin/env bash\nset -euo pipefail\n\nT"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "16.5816px",
+   "uses": 4,
+   "examples": [
+    "36-c2-proof-cpu <pre> 6.8.0-45-generic",
+    "36-c2-proof-cpu <pre> PID NI PRI COMMAND\n20451  0  20 node\n182",
+    "36-c2-proof-cpu <pre> 6.8.0-45-generic"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "14.343px",
+   "uses": 4,
+   "examples": [
+    "55-pipeline-yaml <code> .github/workflows/ci.yml",
+    "59-pipeline-attack-surface <code> .github/workflows/ci.yml",
+    "55-pipeline-yaml <code> .github/workflows/ci.yml"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "21.856px",
+   "uses": 4,
+   "examples": [
+    "56-poisonous-vs-healthy <h3> Poisonous push",
+    "56-poisonous-vs-healthy <h3> Healthy push",
+    "56-poisonous-vs-healthy <h3> Poisonous push"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "13.3868px",
+   "uses": 4,
+   "examples": [
+    "56-poisonous-vs-healthy <pre> 1 # DEMO FILE · VALUES ARE FAKE\n 2 NODE_",
+    "56-poisonous-vs-healthy <pre> 1 # copy to .env and fill in locally\n 2 ",
+    "56-poisonous-vs-healthy <pre> 1 # DEMO FILE · VALUES ARE FAKE\n 2 NODE_"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "12.5672px",
+   "uses": 4,
+   "examples": [
+    "56-poisonous-vs-healthy <pre> $ git commit -m \"config\"\n$ git push orig",
+    "56-poisonous-vs-healthy <pre> $ git commit -m \"config\"\n$ git push orig",
+    "56-poisonous-vs-healthy <pre> $ git commit -m \"config\"\n$ git push orig"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "15.709px",
+   "uses": 4,
+   "examples": [
+    "56-poisonous-vs-healthy <p> Deploy blocked",
+    "56-poisonous-vs-healthy <p> Live without leaking secrets",
+    "56-poisonous-vs-healthy <p> Deploy blocked"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "400",
+   "size": "14.343px",
+   "uses": 4,
+   "examples": [
+    "56-poisonous-vs-healthy <p> The key is in the git history and on Git",
+    "56-poisonous-vs-healthy <p> The real key sits in the CI secret store",
+    "56-poisonous-vs-healthy <p> The key is in the git history and on Git"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "700",
+   "size": "20.8px",
+   "uses": 2,
+   "examples": [
+    "17-permissions <code> -rwxr-xr-x deploy.sh",
+    "17-permissions <code> -rwxr-xr-x deploy.sh"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "500",
+   "size": "20.8px",
+   "uses": 2,
+   "examples": [
+    "17-permissions <code> chmod 755",
+    "17-permissions <code> chmod 755"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "24.8px",
+   "uses": 2,
+   "examples": [
+    "18-text-processing <p> $ cat access.log | grep 404 | sort | uni",
+    "18-text-processing <p> $ cat access.log | grep 404 | sort | uni"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "18.4px",
+   "uses": 2,
+   "examples": [
+    "19-archiving <p> $ tar -czvf project.tar.gz project/",
+    "19-archiving <p> $ tar -czvf project.tar.gz project/"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "15.1392px",
+   "uses": 2,
+   "examples": [
+    "4-why-linux-vs-windows <p> A / 5 · Part A · topic 2",
+    "4-why-linux-vs-windows <p> A / 5 · Part A · topic 2"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "47.808px",
+   "uses": 2,
+   "examples": [
+    "4-why-linux-vs-windows <h2> Better for developers and servers\nBetter",
+    "4-why-linux-vs-windows <h2> Better for developers and servers\nBetter"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "500",
+   "size": "26.2944px",
+   "uses": 2,
+   "examples": [
+    "4-why-linux-vs-windows <p> If Windows has great apps and games, why",
+    "4-why-linux-vs-windows <p> If Windows has great apps and games, why"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "700",
+   "size": "18.441px",
+   "uses": 2,
+   "examples": [
+    "17-permissions <code> -rwxr-xr-x deploy.sh",
+    "17-permissions <code> -rwxr-xr-x deploy.sh"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "500",
+   "size": "18.441px",
+   "uses": 2,
+   "examples": [
+    "17-permissions <code> chmod 755",
+    "17-permissions <code> chmod 755"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "21.856px",
+   "uses": 2,
+   "examples": [
+    "18-text-processing <p> $ cat access.log | grep 404 | sort | uni",
+    "18-text-processing <p> $ cat access.log | grep 404 | sort | uni"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "14.5616px",
+   "uses": 2,
+   "examples": [
+    "26-shell-scripting <p> C / 27 · Part C · topic 22",
+    "26-shell-scripting <p> C / 27 · Part C · topic 22"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "45.984px",
+   "uses": 2,
+   "examples": [
+    "26-shell-scripting <h2> Shell scripting\nShell scripting",
+    "26-shell-scripting <h2> Shell scripting\nShell scripting"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "30.052px",
+   "uses": 2,
+   "examples": [
+    "35-c2-linux-cfs <h3> CFS, then EEVDF",
+    "35-c2-linux-cfs <h3> CFS, then EEVDF"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "15.0024px",
+   "uses": 2,
+   "examples": [
+    "36-c2-proof-cpu <p> C2 / 37 · Part C2 · live proof",
+    "36-c2-proof-cpu <p> C2 / 37 · Part C2 · live proof"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "47.376px",
+   "uses": 2,
+   "examples": [
+    "36-c2-proof-cpu <h2> See scheduling on this machine\nSee sched",
+    "36-c2-proof-cpu <h2> See scheduling on this machine\nSee sched"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "31.584px",
+   "uses": 2,
+   "examples": [
+    "36-c2-proof-cpu <p> Nice values are upside down",
+    "36-c2-proof-cpu <p> Nice values are upside down"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "14.9112px",
+   "uses": 2,
+   "examples": [
+    "38-c2-disk-algos <p> C2 / 39 · Part C2 · disk scheduling",
+    "38-c2-disk-algos <p> C2 / 39 · Part C2 · disk scheduling"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "47.088px",
+   "uses": 2,
+   "examples": [
+    "38-c2-disk-algos <h2> Five ways to sweep a disk\nFive ways to s",
+    "38-c2-disk-algos <h2> Five ways to sweep a disk\nFive ways to s"
+   ]
+  },
+  {
+   "font": "JetBrains Mono Variable",
+   "weight": "400",
+   "size": "14.7896px",
+   "uses": 2,
+   "examples": [
+    "57-safe-to-push <p> D / 58 · Part D · what is safe to push",
+    "57-safe-to-push <p> D / 58 · Part D · what is safe to push"
+   ]
+  },
+  {
+   "font": "Inter Variable",
+   "weight": "600",
+   "size": "46.704px",
+   "uses": 2,
+   "examples": [
+    "57-safe-to-push <h2> What is safe to push\nWhat is safe to pus",
+    "57-safe-to-push <h2> What is safe to push\nWhat is safe to pus"
+   ]
+  }
+ ],
+ "overflows": [
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 7,
+   "id": "choose-your-os",
+   "overflowY": 9,
+   "overflowX": false,
+   "ellipsis": 0,
+   "tinyText": 20,
+   "railOverflowX": false
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 7,
+   "id": "choose-your-os",
+   "overflowY": 9,
+   "overflowX": false,
+   "ellipsis": 0,
+   "tinyText": 20,
+   "railOverflowX": false
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 7,
+   "id": "choose-your-os",
+   "overflowY": 163,
+   "overflowX": false,
+   "ellipsis": 0,
+   "tinyText": 20,
+   "railOverflowX": false
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 8,
+   "id": "where-linux-runs",
+   "overflowY": 27,
+   "overflowX": false,
+   "ellipsis": 0,
+   "tinyText": 1,
+   "railOverflowX": false
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 18,
+   "id": "text-processing",
+   "overflowY": 15,
+   "overflowX": false,
+   "ellipsis": 1,
+   "tinyText": 2,
+   "railOverflowX": false
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 56,
+   "id": "poisonous-vs-healthy",
+   "overflowY": 16,
+   "overflowX": false,
+   "ellipsis": 0,
+   "tinyText": 2,
+   "railOverflowX": false
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 61,
+   "id": "take-home-launch",
+   "overflowY": 36,
+   "overflowX": false,
+   "ellipsis": 1,
+   "tinyText": 1,
+   "railOverflowX": false
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 7,
+   "id": "choose-your-os",
+   "overflowY": 163,
+   "overflowX": false,
+   "ellipsis": 0,
+   "tinyText": 20,
+   "railOverflowX": false
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 8,
+   "id": "where-linux-runs",
+   "overflowY": 27,
+   "overflowX": false,
+   "ellipsis": 0,
+   "tinyText": 1,
+   "railOverflowX": false
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 18,
+   "id": "text-processing",
+   "overflowY": 15,
+   "overflowX": false,
+   "ellipsis": 1,
+   "tinyText": 2,
+   "railOverflowX": false
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 56,
+   "id": "poisonous-vs-healthy",
+   "overflowY": 16,
+   "overflowX": false,
+   "ellipsis": 0,
+   "tinyText": 2,
+   "railOverflowX": false
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 61,
+   "id": "take-home-launch",
+   "overflowY": 36,
+   "overflowX": false,
+   "ellipsis": 1,
+   "tinyText": 1,
+   "railOverflowX": false
+  }
+ ],
+ "ellipsis": [
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 1,
+   "id": "hook",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 11,
+   "id": "navigation",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 12,
+   "id": "directory-hierarchy",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 13,
+   "id": "files-directories",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 14,
+   "id": "editing-files",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 16,
+   "id": "shell-basics",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 18,
+   "id": "text-processing",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 19,
+   "id": "archiving",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 20,
+   "id": "packages",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 22,
+   "id": "server-review",
+   "n": 6
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 23,
+   "id": "processes",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 24,
+   "id": "systemd",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 25,
+   "id": "networking-ssh",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 26,
+   "id": "shell-scripting",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 27,
+   "id": "containers",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 36,
+   "id": "c2-proof-cpu",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 41,
+   "id": "c2-proof-disk",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 47,
+   "id": "c2-proof-mem",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 50,
+   "id": "deploy-plan",
+   "n": 4
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 51,
+   "id": "build-page",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 52,
+   "id": "version-control",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 55,
+   "id": "pipeline-yaml",
+   "n": 7
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 58,
+   "id": "security-layers",
+   "n": 4
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 59,
+   "id": "pipeline-attack-surface",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 61,
+   "id": "take-home-launch",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 1,
+   "id": "hook",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 11,
+   "id": "navigation",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 12,
+   "id": "directory-hierarchy",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 13,
+   "id": "files-directories",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 14,
+   "id": "editing-files",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 16,
+   "id": "shell-basics",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 18,
+   "id": "text-processing",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 19,
+   "id": "archiving",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 20,
+   "id": "packages",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 22,
+   "id": "server-review",
+   "n": 6
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 23,
+   "id": "processes",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 24,
+   "id": "systemd",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 25,
+   "id": "networking-ssh",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 26,
+   "id": "shell-scripting",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 27,
+   "id": "containers",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 36,
+   "id": "c2-proof-cpu",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 41,
+   "id": "c2-proof-disk",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 47,
+   "id": "c2-proof-mem",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 50,
+   "id": "deploy-plan",
+   "n": 4
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 51,
+   "id": "build-page",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 52,
+   "id": "version-control",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 55,
+   "id": "pipeline-yaml",
+   "n": 7
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 58,
+   "id": "security-layers",
+   "n": 4
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 59,
+   "id": "pipeline-attack-surface",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 61,
+   "id": "take-home-launch",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 1,
+   "id": "hook",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 11,
+   "id": "navigation",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 12,
+   "id": "directory-hierarchy",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 13,
+   "id": "files-directories",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 14,
+   "id": "editing-files",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 16,
+   "id": "shell-basics",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 18,
+   "id": "text-processing",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 19,
+   "id": "archiving",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 20,
+   "id": "packages",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 22,
+   "id": "server-review",
+   "n": 6
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 23,
+   "id": "processes",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 24,
+   "id": "systemd",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 25,
+   "id": "networking-ssh",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 26,
+   "id": "shell-scripting",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 27,
+   "id": "containers",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 36,
+   "id": "c2-proof-cpu",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 41,
+   "id": "c2-proof-disk",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 47,
+   "id": "c2-proof-mem",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 50,
+   "id": "deploy-plan",
+   "n": 4
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 51,
+   "id": "build-page",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 52,
+   "id": "version-control",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 55,
+   "id": "pipeline-yaml",
+   "n": 7
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 58,
+   "id": "security-layers",
+   "n": 4
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 59,
+   "id": "pipeline-attack-surface",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 61,
+   "id": "take-home-launch",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 1,
+   "id": "hook",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 11,
+   "id": "navigation",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 12,
+   "id": "directory-hierarchy",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 13,
+   "id": "files-directories",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 14,
+   "id": "editing-files",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 16,
+   "id": "shell-basics",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 18,
+   "id": "text-processing",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 19,
+   "id": "archiving",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 20,
+   "id": "packages",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 22,
+   "id": "server-review",
+   "n": 6
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 23,
+   "id": "processes",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 24,
+   "id": "systemd",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 25,
+   "id": "networking-ssh",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 26,
+   "id": "shell-scripting",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 27,
+   "id": "containers",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 36,
+   "id": "c2-proof-cpu",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 41,
+   "id": "c2-proof-disk",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 47,
+   "id": "c2-proof-mem",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 50,
+   "id": "deploy-plan",
+   "n": 4
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 51,
+   "id": "build-page",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 52,
+   "id": "version-control",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 55,
+   "id": "pipeline-yaml",
+   "n": 7
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 58,
+   "id": "security-layers",
+   "n": 4
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 59,
+   "id": "pipeline-attack-surface",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 61,
+   "id": "take-home-launch",
+   "n": 1
+  }
+ ],
+ "tinyText": [
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 0,
+   "id": "boot",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 1,
+   "id": "hook",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 3,
+   "id": "why-linux",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 4,
+   "id": "why-linux-vs-windows",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 5,
+   "id": "cpu-architectures",
+   "n": 4
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 6,
+   "id": "distro-types",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 7,
+   "id": "choose-your-os",
+   "n": 20
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 8,
+   "id": "where-linux-runs",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 9,
+   "id": "linus-torvalds",
+   "n": 5
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 11,
+   "id": "navigation",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 12,
+   "id": "directory-hierarchy",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 13,
+   "id": "files-directories",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 14,
+   "id": "editing-files",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 15,
+   "id": "no-mouse-challenge",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 16,
+   "id": "shell-basics",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 17,
+   "id": "permissions",
+   "n": 4
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 18,
+   "id": "text-processing",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 19,
+   "id": "archiving",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 20,
+   "id": "packages",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 22,
+   "id": "server-review",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 23,
+   "id": "processes",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 24,
+   "id": "systemd",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 25,
+   "id": "networking-ssh",
+   "n": 3
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 26,
+   "id": "shell-scripting",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 27,
+   "id": "containers",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 28,
+   "id": "user-management",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 29,
+   "id": "links",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 30,
+   "id": "disks-filesystems",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 31,
+   "id": "c2-title",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 32,
+   "id": "c2-scheduler-what",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 33,
+   "id": "c2-scheduler-algos",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 34,
+   "id": "c2-scheduler-sim",
+   "n": 11
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 35,
+   "id": "c2-linux-cfs",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 36,
+   "id": "c2-proof-cpu",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 37,
+   "id": "c2-disk-why",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 38,
+   "id": "c2-disk-algos",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 39,
+   "id": "c2-disk-sim",
+   "n": 6
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 40,
+   "id": "c2-linux-iosched",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 41,
+   "id": "c2-proof-disk",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 42,
+   "id": "c2-vm-picture",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 43,
+   "id": "c2-fault-kinds",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 44,
+   "id": "c2-replacement",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 45,
+   "id": "c2-paging-sim",
+   "n": 5
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 46,
+   "id": "c2-thrashing",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 47,
+   "id": "c2-proof-mem",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 48,
+   "id": "c2-bridge",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 50,
+   "id": "deploy-plan",
+   "n": 5
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 51,
+   "id": "build-page",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 52,
+   "id": "version-control",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 53,
+   "id": "link-repo",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 54,
+   "id": "server-deploy",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 55,
+   "id": "pipeline-yaml",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 56,
+   "id": "poisonous-vs-healthy",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 57,
+   "id": "safe-to-push",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 58,
+   "id": "security-layers",
+   "n": 5
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 59,
+   "id": "pipeline-attack-surface",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "paper",
+   "idx": 61,
+   "id": "take-home-launch",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 0,
+   "id": "boot",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 1,
+   "id": "hook",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 3,
+   "id": "why-linux",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 4,
+   "id": "why-linux-vs-windows",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 5,
+   "id": "cpu-architectures",
+   "n": 4
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 6,
+   "id": "distro-types",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 7,
+   "id": "choose-your-os",
+   "n": 20
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 8,
+   "id": "where-linux-runs",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 9,
+   "id": "linus-torvalds",
+   "n": 5
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 11,
+   "id": "navigation",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 12,
+   "id": "directory-hierarchy",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 13,
+   "id": "files-directories",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 14,
+   "id": "editing-files",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 15,
+   "id": "no-mouse-challenge",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 16,
+   "id": "shell-basics",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 17,
+   "id": "permissions",
+   "n": 4
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 18,
+   "id": "text-processing",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 19,
+   "id": "archiving",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 20,
+   "id": "packages",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 22,
+   "id": "server-review",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 23,
+   "id": "processes",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 24,
+   "id": "systemd",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 25,
+   "id": "networking-ssh",
+   "n": 3
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 26,
+   "id": "shell-scripting",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 27,
+   "id": "containers",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 28,
+   "id": "user-management",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 29,
+   "id": "links",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 30,
+   "id": "disks-filesystems",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 31,
+   "id": "c2-title",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 32,
+   "id": "c2-scheduler-what",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 33,
+   "id": "c2-scheduler-algos",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 34,
+   "id": "c2-scheduler-sim",
+   "n": 11
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 35,
+   "id": "c2-linux-cfs",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 36,
+   "id": "c2-proof-cpu",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 37,
+   "id": "c2-disk-why",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 38,
+   "id": "c2-disk-algos",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 39,
+   "id": "c2-disk-sim",
+   "n": 6
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 40,
+   "id": "c2-linux-iosched",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 41,
+   "id": "c2-proof-disk",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 42,
+   "id": "c2-vm-picture",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 43,
+   "id": "c2-fault-kinds",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 44,
+   "id": "c2-replacement",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 45,
+   "id": "c2-paging-sim",
+   "n": 5
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 46,
+   "id": "c2-thrashing",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 47,
+   "id": "c2-proof-mem",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 48,
+   "id": "c2-bridge",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 50,
+   "id": "deploy-plan",
+   "n": 5
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 51,
+   "id": "build-page",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 52,
+   "id": "version-control",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 53,
+   "id": "link-repo",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 54,
+   "id": "server-deploy",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 55,
+   "id": "pipeline-yaml",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 56,
+   "id": "poisonous-vs-healthy",
+   "n": 2
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 57,
+   "id": "safe-to-push",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 58,
+   "id": "security-layers",
+   "n": 5
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 59,
+   "id": "pipeline-attack-surface",
+   "n": 1
+  },
+  {
+   "vp": "1920x1080",
+   "theme": "ink",
+   "idx": 61,
+   "id": "take-home-launch",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 0,
+   "id": "boot",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 1,
+   "id": "hook",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 3,
+   "id": "why-linux",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 4,
+   "id": "why-linux-vs-windows",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 5,
+   "id": "cpu-architectures",
+   "n": 4
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 6,
+   "id": "distro-types",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 7,
+   "id": "choose-your-os",
+   "n": 20
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 8,
+   "id": "where-linux-runs",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 9,
+   "id": "linus-torvalds",
+   "n": 5
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 11,
+   "id": "navigation",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 12,
+   "id": "directory-hierarchy",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 13,
+   "id": "files-directories",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 14,
+   "id": "editing-files",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 15,
+   "id": "no-mouse-challenge",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 16,
+   "id": "shell-basics",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 17,
+   "id": "permissions",
+   "n": 4
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 18,
+   "id": "text-processing",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 19,
+   "id": "archiving",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 20,
+   "id": "packages",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 22,
+   "id": "server-review",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 23,
+   "id": "processes",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 24,
+   "id": "systemd",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 25,
+   "id": "networking-ssh",
+   "n": 3
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 26,
+   "id": "shell-scripting",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 27,
+   "id": "containers",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 28,
+   "id": "user-management",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 29,
+   "id": "links",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 30,
+   "id": "disks-filesystems",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 31,
+   "id": "c2-title",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 32,
+   "id": "c2-scheduler-what",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 33,
+   "id": "c2-scheduler-algos",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 34,
+   "id": "c2-scheduler-sim",
+   "n": 11
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 35,
+   "id": "c2-linux-cfs",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 36,
+   "id": "c2-proof-cpu",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 37,
+   "id": "c2-disk-why",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 38,
+   "id": "c2-disk-algos",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 39,
+   "id": "c2-disk-sim",
+   "n": 6
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 40,
+   "id": "c2-linux-iosched",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 41,
+   "id": "c2-proof-disk",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 42,
+   "id": "c2-vm-picture",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 43,
+   "id": "c2-fault-kinds",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 44,
+   "id": "c2-replacement",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 45,
+   "id": "c2-paging-sim",
+   "n": 5
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 46,
+   "id": "c2-thrashing",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 47,
+   "id": "c2-proof-mem",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 48,
+   "id": "c2-bridge",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 50,
+   "id": "deploy-plan",
+   "n": 5
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 51,
+   "id": "build-page",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 52,
+   "id": "version-control",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 53,
+   "id": "link-repo",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 54,
+   "id": "server-deploy",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 55,
+   "id": "pipeline-yaml",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 56,
+   "id": "poisonous-vs-healthy",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 57,
+   "id": "safe-to-push",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 58,
+   "id": "security-layers",
+   "n": 5
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 59,
+   "id": "pipeline-attack-surface",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "paper",
+   "idx": 61,
+   "id": "take-home-launch",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 0,
+   "id": "boot",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 1,
+   "id": "hook",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 3,
+   "id": "why-linux",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 4,
+   "id": "why-linux-vs-windows",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 5,
+   "id": "cpu-architectures",
+   "n": 4
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 6,
+   "id": "distro-types",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 7,
+   "id": "choose-your-os",
+   "n": 20
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 8,
+   "id": "where-linux-runs",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 9,
+   "id": "linus-torvalds",
+   "n": 5
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 11,
+   "id": "navigation",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 12,
+   "id": "directory-hierarchy",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 13,
+   "id": "files-directories",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 14,
+   "id": "editing-files",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 15,
+   "id": "no-mouse-challenge",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 16,
+   "id": "shell-basics",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 17,
+   "id": "permissions",
+   "n": 4
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 18,
+   "id": "text-processing",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 19,
+   "id": "archiving",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 20,
+   "id": "packages",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 22,
+   "id": "server-review",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 23,
+   "id": "processes",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 24,
+   "id": "systemd",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 25,
+   "id": "networking-ssh",
+   "n": 3
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 26,
+   "id": "shell-scripting",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 27,
+   "id": "containers",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 28,
+   "id": "user-management",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 29,
+   "id": "links",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 30,
+   "id": "disks-filesystems",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 31,
+   "id": "c2-title",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 32,
+   "id": "c2-scheduler-what",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 33,
+   "id": "c2-scheduler-algos",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 34,
+   "id": "c2-scheduler-sim",
+   "n": 11
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 35,
+   "id": "c2-linux-cfs",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 36,
+   "id": "c2-proof-cpu",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 37,
+   "id": "c2-disk-why",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 38,
+   "id": "c2-disk-algos",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 39,
+   "id": "c2-disk-sim",
+   "n": 6
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 40,
+   "id": "c2-linux-iosched",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 41,
+   "id": "c2-proof-disk",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 42,
+   "id": "c2-vm-picture",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 43,
+   "id": "c2-fault-kinds",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 44,
+   "id": "c2-replacement",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 45,
+   "id": "c2-paging-sim",
+   "n": 5
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 46,
+   "id": "c2-thrashing",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 47,
+   "id": "c2-proof-mem",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 48,
+   "id": "c2-bridge",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 50,
+   "id": "deploy-plan",
+   "n": 5
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 51,
+   "id": "build-page",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 52,
+   "id": "version-control",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 53,
+   "id": "link-repo",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 54,
+   "id": "server-deploy",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 55,
+   "id": "pipeline-yaml",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 56,
+   "id": "poisonous-vs-healthy",
+   "n": 2
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 57,
+   "id": "safe-to-push",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 58,
+   "id": "security-layers",
+   "n": 5
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 59,
+   "id": "pipeline-attack-surface",
+   "n": 1
+  },
+  {
+   "vp": "1366x768",
+   "theme": "ink",
+   "idx": 61,
+   "id": "take-home-launch",
+   "n": 1
+  }
+ ],
+ "axe": [
+  {
+   "id": "scrollable-region-focusable",
+   "impact": "serious",
+   "help": "Scrollable region must have keyboard access",
+   "scenes": [
+    "1920x1080/paper/16-shell-basics (4 nodes)",
+    "1920x1080/paper/17-permissions (4 nodes)",
+    "1920x1080/paper/18-text-processing (4 nodes)",
+    "1920x1080/paper/19-archiving (4 nodes)",
+    "1920x1080/paper/20-packages (4 nodes)",
+    "1920x1080/paper/24-systemd (1 nodes)",
+    "1920x1080/paper/25-networking-ssh (1 nodes)",
+    "1920x1080/paper/26-shell-scripting (1 nodes)",
+    "1920x1080/paper/27-containers (1 nodes)",
+    "1920x1080/paper/28-user-management (1 nodes)",
+    "1920x1080/paper/30-disks-filesystems (1 nodes)",
+    "1920x1080/paper/31-c2-title (1 nodes)",
+    "1920x1080/paper/54-server-deploy (2 nodes)",
+    "1920x1080/paper/55-pipeline-yaml (3 nodes)",
+    "1920x1080/paper/56-poisonous-vs-healthy (2 nodes)",
+    "1920x1080/paper/57-safe-to-push (2 nodes)",
+    "1920x1080/paper/58-security-layers (3 nodes)",
+    "1920x1080/ink/16-shell-basics (4 nodes)",
+    "1920x1080/ink/17-permissions (4 nodes)",
+    "1920x1080/ink/18-text-processing (4 nodes)",
+    "1920x1080/ink/19-archiving (4 nodes)",
+    "1920x1080/ink/20-packages (4 nodes)",
+    "1920x1080/ink/24-systemd (1 nodes)",
+    "1920x1080/ink/25-networking-ssh (1 nodes)",
+    "1920x1080/ink/26-shell-scripting (1 nodes)",
+    "1920x1080/ink/27-containers (1 nodes)",
+    "1920x1080/ink/28-user-management (1 nodes)",
+    "1920x1080/ink/30-disks-filesystems (1 nodes)",
+    "1920x1080/ink/31-c2-title (1 nodes)",
+    "1920x1080/ink/54-server-deploy (2 nodes)",
+    "1920x1080/ink/55-pipeline-yaml (3 nodes)",
+    "1920x1080/ink/56-poisonous-vs-healthy (2 nodes)",
+    "1920x1080/ink/57-safe-to-push (2 nodes)",
+    "1920x1080/ink/58-security-layers (3 nodes)"
+   ]
+  },
+  {
+   "id": "color-contrast",
+   "impact": "serious",
+   "help": "Elements must meet minimum color contrast ratio thresholds",
+   "scenes": [
+    "1920x1080/paper/18-text-processing (3 nodes)",
+    "1920x1080/paper/20-packages (1 nodes)",
+    "1920x1080/paper/23-processes (1 nodes)",
+    "1920x1080/paper/34-c2-scheduler-sim (2 nodes)",
+    "1920x1080/paper/50-deploy-plan (3 nodes)",
+    "1920x1080/paper/53-link-repo (2 nodes)",
+    "1920x1080/paper/54-server-deploy (4 nodes)",
+    "1920x1080/paper/56-poisonous-vs-healthy (1 nodes)",
+    "1920x1080/ink/18-text-processing (3 nodes)",
+    "1920x1080/ink/20-packages (1 nodes)",
+    "1920x1080/ink/23-processes (1 nodes)",
+    "1920x1080/ink/25-networking-ssh (1 nodes)",
+    "1920x1080/ink/34-c2-scheduler-sim (2 nodes)",
+    "1920x1080/ink/50-deploy-plan (3 nodes)",
+    "1920x1080/ink/53-link-repo (2 nodes)",
+    "1920x1080/ink/54-server-deploy (4 nodes)",
+    "1920x1080/ink/56-poisonous-vs-healthy (1 nodes)"
+   ]
+  }
+ ],
+ "console": []
+}

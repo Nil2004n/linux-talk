@@ -1,0 +1,1118 @@
+[
+ {
+  "n": 0,
+  "idx": "00",
+  "id": "boot",
+  "part": "intro",
+  "title": "(part card)",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/00-boot.png",
+    "ink": "screens/1920x1080/ink/00-boot.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/00-boot.png",
+    "ink": "screens/1366x768/ink/00-boot.png"
+   }
+  }
+ },
+ {
+  "n": 1,
+  "idx": "01",
+  "id": "hook",
+  "part": "intro",
+  "title": "Linux runs the internet. The terminal is how you drive it.",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/01-hook.png",
+    "ink": "screens/1920x1080/ink/01-hook.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/01-hook.png",
+    "ink": "screens/1366x768/ink/01-hook.png"
+   }
+  }
+ },
+ {
+  "n": 2,
+  "idx": "02",
+  "id": "part-a",
+  "part": "A",
+  "title": "Why Linux",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/02-part-a.png",
+    "ink": "screens/1920x1080/ink/02-part-a.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/02-part-a.png",
+    "ink": "screens/1366x768/ink/02-part-a.png"
+   }
+  }
+ },
+ {
+  "n": 3,
+  "idx": "03",
+  "id": "why-linux",
+  "part": "A",
+  "title": "Why use Linux",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/03-why-linux.png",
+    "ink": "screens/1920x1080/ink/03-why-linux.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/03-why-linux.png",
+    "ink": "screens/1366x768/ink/03-why-linux.png"
+   }
+  }
+ },
+ {
+  "n": 4,
+  "idx": "04",
+  "id": "why-linux-vs-windows",
+  "part": "A",
+  "title": "Better for developers and servers",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/04-why-linux-vs-windows.png",
+    "ink": "screens/1920x1080/ink/04-why-linux-vs-windows.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/04-why-linux-vs-windows.png",
+    "ink": "screens/1366x768/ink/04-why-linux-vs-windows.png"
+   }
+  }
+ },
+ {
+  "n": 5,
+  "idx": "05",
+  "id": "cpu-architectures",
+  "part": "A",
+  "title": "CPU architectures: x86_64, ARM, RISC-V",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/05-cpu-architectures.png",
+    "ink": "screens/1920x1080/ink/05-cpu-architectures.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/05-cpu-architectures.png",
+    "ink": "screens/1366x768/ink/05-cpu-architectures.png"
+   }
+  }
+ },
+ {
+  "n": 6,
+  "idx": "06",
+  "id": "distro-types",
+  "part": "A",
+  "title": "Same kernel, different personalities",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/06-distro-types.png",
+    "ink": "screens/1920x1080/ink/06-distro-types.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/06-distro-types.png",
+    "ink": "screens/1366x768/ink/06-distro-types.png"
+   }
+  }
+ },
+ {
+  "n": 7,
+  "idx": "07",
+  "id": "choose-your-os",
+  "part": "A",
+  "title": "Choosing your OS",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/07-choose-your-os.png",
+    "ink": "screens/1920x1080/ink/07-choose-your-os.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/07-choose-your-os.png",
+    "ink": "screens/1366x768/ink/07-choose-your-os.png"
+   }
+  }
+ },
+ {
+  "n": 8,
+  "idx": "08",
+  "id": "where-linux-runs",
+  "part": "A",
+  "title": "Where Linux is used",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/08-where-linux-runs.png",
+    "ink": "screens/1920x1080/ink/08-where-linux-runs.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/08-where-linux-runs.png",
+    "ink": "screens/1366x768/ink/08-where-linux-runs.png"
+   }
+  }
+ },
+ {
+  "n": 9,
+  "idx": "09",
+  "id": "linus-torvalds",
+  "part": "A",
+  "title": "Git and Linux share one inventor",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/09-linus-torvalds.png",
+    "ink": "screens/1920x1080/ink/09-linus-torvalds.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/09-linus-torvalds.png",
+    "ink": "screens/1366x768/ink/09-linus-torvalds.png"
+   }
+  }
+ },
+ {
+  "n": 10,
+  "idx": "10",
+  "id": "part-b",
+  "part": "B",
+  "title": "Terminal fundamentals",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/10-part-b.png",
+    "ink": "screens/1920x1080/ink/10-part-b.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/10-part-b.png",
+    "ink": "screens/1366x768/ink/10-part-b.png"
+   }
+  }
+ },
+ {
+  "n": 11,
+  "idx": "11",
+  "id": "navigation",
+  "part": "B",
+  "title": "Navigation and basic commands",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/11-navigation.png",
+    "ink": "screens/1920x1080/ink/11-navigation.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/11-navigation.png",
+    "ink": "screens/1366x768/ink/11-navigation.png"
+   }
+  }
+ },
+ {
+  "n": 12,
+  "idx": "12",
+  "id": "directory-hierarchy",
+  "part": "B",
+  "title": "Directory hierarchy",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/12-directory-hierarchy.png",
+    "ink": "screens/1920x1080/ink/12-directory-hierarchy.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/12-directory-hierarchy.png",
+    "ink": "screens/1366x768/ink/12-directory-hierarchy.png"
+   }
+  }
+ },
+ {
+  "n": 13,
+  "idx": "13",
+  "id": "files-directories",
+  "part": "B",
+  "title": "Create, move, copy, rename, delete",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/13-files-directories.png",
+    "ink": "screens/1920x1080/ink/13-files-directories.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/13-files-directories.png",
+    "ink": "screens/1366x768/ink/13-files-directories.png"
+   }
+  }
+ },
+ {
+  "n": 14,
+  "idx": "14",
+  "id": "editing-files",
+  "part": "B",
+  "title": "Editing files with nano and mousepad",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/14-editing-files.png",
+    "ink": "screens/1920x1080/ink/14-editing-files.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/14-editing-files.png",
+    "ink": "screens/1366x768/ink/14-editing-files.png"
+   }
+  }
+ },
+ {
+  "n": 15,
+  "idx": "15",
+  "id": "no-mouse-challenge",
+  "part": "B",
+  "title": "Coding without an IDE: the no-mouse challenge",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/15-no-mouse-challenge.png",
+    "ink": "screens/1920x1080/ink/15-no-mouse-challenge.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/15-no-mouse-challenge.png",
+    "ink": "screens/1366x768/ink/15-no-mouse-challenge.png"
+   }
+  }
+ },
+ {
+  "n": 16,
+  "idx": "16",
+  "id": "shell-basics",
+  "part": "B",
+  "title": "Shell basics: PATH, variables, redirects, sudo",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/16-shell-basics.png",
+    "ink": "screens/1920x1080/ink/16-shell-basics.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/16-shell-basics.png",
+    "ink": "screens/1366x768/ink/16-shell-basics.png"
+   }
+  }
+ },
+ {
+  "n": 17,
+  "idx": "17",
+  "id": "permissions",
+  "part": "B",
+  "title": "File permissions: chmod and chown",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/17-permissions.png",
+    "ink": "screens/1920x1080/ink/17-permissions.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/17-permissions.png",
+    "ink": "screens/1366x768/ink/17-permissions.png"
+   }
+  }
+ },
+ {
+  "n": 18,
+  "idx": "18",
+  "id": "text-processing",
+  "part": "B",
+  "title": "Text processing and pipes",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/18-text-processing.png",
+    "ink": "screens/1920x1080/ink/18-text-processing.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/18-text-processing.png",
+    "ink": "screens/1366x768/ink/18-text-processing.png"
+   }
+  }
+ },
+ {
+  "n": 19,
+  "idx": "19",
+  "id": "archiving",
+  "part": "B",
+  "title": "Archiving and compressing",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/19-archiving.png",
+    "ink": "screens/1920x1080/ink/19-archiving.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/19-archiving.png",
+    "ink": "screens/1366x768/ink/19-archiving.png"
+   }
+  }
+ },
+ {
+  "n": 20,
+  "idx": "20",
+  "id": "packages",
+  "part": "B",
+  "title": "Package management and npm",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/20-packages.png",
+    "ink": "screens/1920x1080/ink/20-packages.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/20-packages.png",
+    "ink": "screens/1366x768/ink/20-packages.png"
+   }
+  }
+ },
+ {
+  "n": 21,
+  "idx": "21",
+  "id": "part-c",
+  "part": "C",
+  "title": "Servers and system",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/21-part-c.png",
+    "ink": "screens/1920x1080/ink/21-part-c.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/21-part-c.png",
+    "ink": "screens/1366x768/ink/21-part-c.png"
+   }
+  }
+ },
+ {
+  "n": 22,
+  "idx": "22",
+  "id": "server-review",
+  "part": "C",
+  "title": "Server review: uptime, memory, disk, top",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/22-server-review.png",
+    "ink": "screens/1920x1080/ink/22-server-review.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/22-server-review.png",
+    "ink": "screens/1366x768/ink/22-server-review.png"
+   }
+  }
+ },
+ {
+  "n": 23,
+  "idx": "23",
+  "id": "processes",
+  "part": "C",
+  "title": "Process management: ps and kill",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/23-processes.png",
+    "ink": "screens/1920x1080/ink/23-processes.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/23-processes.png",
+    "ink": "screens/1366x768/ink/23-processes.png"
+   }
+  }
+ },
+ {
+  "n": 24,
+  "idx": "24",
+  "id": "systemd",
+  "part": "C",
+  "title": "Services with systemd",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/24-systemd.png",
+    "ink": "screens/1920x1080/ink/24-systemd.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/24-systemd.png",
+    "ink": "screens/1366x768/ink/24-systemd.png"
+   }
+  }
+ },
+ {
+  "n": 25,
+  "idx": "25",
+  "id": "networking-ssh",
+  "part": "C",
+  "title": "Networking and SSH",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/25-networking-ssh.png",
+    "ink": "screens/1920x1080/ink/25-networking-ssh.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/25-networking-ssh.png",
+    "ink": "screens/1366x768/ink/25-networking-ssh.png"
+   }
+  }
+ },
+ {
+  "n": 26,
+  "idx": "26",
+  "id": "shell-scripting",
+  "part": "C",
+  "title": "Shell scripting",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/26-shell-scripting.png",
+    "ink": "screens/1920x1080/ink/26-shell-scripting.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/26-shell-scripting.png",
+    "ink": "screens/1366x768/ink/26-shell-scripting.png"
+   }
+  }
+ },
+ {
+  "n": 27,
+  "idx": "27",
+  "id": "containers",
+  "part": "C",
+  "title": "Containers and Docker",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/27-containers.png",
+    "ink": "screens/1920x1080/ink/27-containers.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/27-containers.png",
+    "ink": "screens/1366x768/ink/27-containers.png"
+   }
+  }
+ },
+ {
+  "n": 28,
+  "idx": "28",
+  "id": "user-management",
+  "part": "C",
+  "title": "User management",
+  "badge": "TAKE-HOME",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/28-user-management.png",
+    "ink": "screens/1920x1080/ink/28-user-management.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/28-user-management.png",
+    "ink": "screens/1366x768/ink/28-user-management.png"
+   }
+  }
+ },
+ {
+  "n": 29,
+  "idx": "29",
+  "id": "links",
+  "part": "C",
+  "title": "Soft links and hard links",
+  "badge": "TAKE-HOME",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/29-links.png",
+    "ink": "screens/1920x1080/ink/29-links.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/29-links.png",
+    "ink": "screens/1366x768/ink/29-links.png"
+   }
+  }
+ },
+ {
+  "n": 30,
+  "idx": "30",
+  "id": "disks-filesystems",
+  "part": "C",
+  "title": "Disks, filesystems, LVM and booting",
+  "badge": "TAKE-HOME",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/30-disks-filesystems.png",
+    "ink": "screens/1920x1080/ink/30-disks-filesystems.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/30-disks-filesystems.png",
+    "ink": "screens/1366x768/ink/30-disks-filesystems.png"
+   }
+  }
+ },
+ {
+  "n": 31,
+  "idx": "31",
+  "id": "c2-title",
+  "part": "C2",
+  "title": "Three referees, one machine",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/31-c2-title.png",
+    "ink": "screens/1920x1080/ink/31-c2-title.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/31-c2-title.png",
+    "ink": "screens/1366x768/ink/31-c2-title.png"
+   }
+  }
+ },
+ {
+  "n": 32,
+  "idx": "32",
+  "id": "c2-scheduler-what",
+  "part": "C2",
+  "title": "Many processes, one CPU",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/32-c2-scheduler-what.png",
+    "ink": "screens/1920x1080/ink/32-c2-scheduler-what.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/32-c2-scheduler-what.png",
+    "ink": "screens/1366x768/ink/32-c2-scheduler-what.png"
+   }
+  }
+ },
+ {
+  "n": 33,
+  "idx": "33",
+  "id": "c2-scheduler-algos",
+  "part": "C2",
+  "title": "Four classic schedulers",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/33-c2-scheduler-algos.png",
+    "ink": "screens/1920x1080/ink/33-c2-scheduler-algos.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/33-c2-scheduler-algos.png",
+    "ink": "screens/1366x768/ink/33-c2-scheduler-algos.png"
+   }
+  }
+ },
+ {
+  "n": 34,
+  "idx": "34",
+  "id": "c2-scheduler-sim",
+  "part": "C2",
+  "title": "Watch the schedulers race",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/34-c2-scheduler-sim.png",
+    "ink": "screens/1920x1080/ink/34-c2-scheduler-sim.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/34-c2-scheduler-sim.png",
+    "ink": "screens/1366x768/ink/34-c2-scheduler-sim.png"
+   }
+  }
+ },
+ {
+  "n": 35,
+  "idx": "35",
+  "id": "c2-linux-cfs",
+  "part": "C2",
+  "title": "Linux shares fairly, then hurries the urgent",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/35-c2-linux-cfs.png",
+    "ink": "screens/1920x1080/ink/35-c2-linux-cfs.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/35-c2-linux-cfs.png",
+    "ink": "screens/1366x768/ink/35-c2-linux-cfs.png"
+   }
+  }
+ },
+ {
+  "n": 36,
+  "idx": "36",
+  "id": "c2-proof-cpu",
+  "part": "C2",
+  "title": "See scheduling on this machine",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/36-c2-proof-cpu.png",
+    "ink": "screens/1920x1080/ink/36-c2-proof-cpu.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/36-c2-proof-cpu.png",
+    "ink": "screens/1366x768/ink/36-c2-proof-cpu.png"
+   }
+  }
+ },
+ {
+  "n": 37,
+  "idx": "37",
+  "id": "c2-disk-why",
+  "part": "C2",
+  "title": "Disks are slow movers",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/37-c2-disk-why.png",
+    "ink": "screens/1920x1080/ink/37-c2-disk-why.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/37-c2-disk-why.png",
+    "ink": "screens/1366x768/ink/37-c2-disk-why.png"
+   }
+  }
+ },
+ {
+  "n": 38,
+  "idx": "38",
+  "id": "c2-disk-algos",
+  "part": "C2",
+  "title": "Five ways to sweep a disk",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/38-c2-disk-algos.png",
+    "ink": "screens/1920x1080/ink/38-c2-disk-algos.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/38-c2-disk-algos.png",
+    "ink": "screens/1366x768/ink/38-c2-disk-algos.png"
+   }
+  }
+ },
+ {
+  "n": 39,
+  "idx": "39",
+  "id": "c2-disk-sim",
+  "part": "C2",
+  "title": "Race the disk head",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/39-c2-disk-sim.png",
+    "ink": "screens/1920x1080/ink/39-c2-disk-sim.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/39-c2-disk-sim.png",
+    "ink": "screens/1366x768/ink/39-c2-disk-sim.png"
+   }
+  }
+ },
+ {
+  "n": 40,
+  "idx": "40",
+  "id": "c2-linux-iosched",
+  "part": "C2",
+  "title": "Linux calls them I/O schedulers",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/40-c2-linux-iosched.png",
+    "ink": "screens/1920x1080/ink/40-c2-linux-iosched.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/40-c2-linux-iosched.png",
+    "ink": "screens/1366x768/ink/40-c2-linux-iosched.png"
+   }
+  }
+ },
+ {
+  "n": 41,
+  "idx": "41",
+  "id": "c2-proof-disk",
+  "part": "C2",
+  "title": "Read your own scheduler",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/41-c2-proof-disk.png",
+    "ink": "screens/1920x1080/ink/41-c2-proof-disk.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/41-c2-proof-disk.png",
+    "ink": "screens/1366x768/ink/41-c2-proof-disk.png"
+   }
+  }
+ },
+ {
+  "n": 42,
+  "idx": "42",
+  "id": "c2-vm-picture",
+  "part": "C2",
+  "title": "Every process gets a private illusion",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/42-c2-vm-picture.png",
+    "ink": "screens/1920x1080/ink/42-c2-vm-picture.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/42-c2-vm-picture.png",
+    "ink": "screens/1366x768/ink/42-c2-vm-picture.png"
+   }
+  }
+ },
+ {
+  "n": 43,
+  "idx": "43",
+  "id": "c2-fault-kinds",
+  "part": "C2",
+  "title": "A page fault is usually not an error",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/43-c2-fault-kinds.png",
+    "ink": "screens/1920x1080/ink/43-c2-fault-kinds.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/43-c2-fault-kinds.png",
+    "ink": "screens/1366x768/ink/43-c2-fault-kinds.png"
+   }
+  }
+ },
+ {
+  "n": 44,
+  "idx": "44",
+  "id": "c2-replacement",
+  "part": "C2",
+  "title": "Three eviction strategies",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/44-c2-replacement.png",
+    "ink": "screens/1920x1080/ink/44-c2-replacement.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/44-c2-replacement.png",
+    "ink": "screens/1366x768/ink/44-c2-replacement.png"
+   }
+  }
+ },
+ {
+  "n": 45,
+  "idx": "45",
+  "id": "c2-paging-sim",
+  "part": "C2",
+  "title": "Fault your way through memory",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/45-c2-paging-sim.png",
+    "ink": "screens/1920x1080/ink/45-c2-paging-sim.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/45-c2-paging-sim.png",
+    "ink": "screens/1366x768/ink/45-c2-paging-sim.png"
+   }
+  }
+ },
+ {
+  "n": 46,
+  "idx": "46",
+  "id": "c2-thrashing",
+  "part": "C2",
+  "title": "Thrashing: all swap, no work",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/46-c2-thrashing.png",
+    "ink": "screens/1920x1080/ink/46-c2-thrashing.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/46-c2-thrashing.png",
+    "ink": "screens/1366x768/ink/46-c2-thrashing.png"
+   }
+  }
+ },
+ {
+  "n": 47,
+  "idx": "47",
+  "id": "c2-proof-mem",
+  "part": "C2",
+  "title": "Count real page faults",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/47-c2-proof-mem.png",
+    "ink": "screens/1920x1080/ink/47-c2-proof-mem.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/47-c2-proof-mem.png",
+    "ink": "screens/1366x768/ink/47-c2-proof-mem.png"
+   }
+  }
+ },
+ {
+  "n": 48,
+  "idx": "48",
+  "id": "c2-bridge",
+  "part": "C2",
+  "title": "Three referees, one machine",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/48-c2-bridge.png",
+    "ink": "screens/1920x1080/ink/48-c2-bridge.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/48-c2-bridge.png",
+    "ink": "screens/1366x768/ink/48-c2-bridge.png"
+   }
+  }
+ },
+ {
+  "n": 49,
+  "idx": "49",
+  "id": "part-d",
+  "part": "D",
+  "title": "GitHub to deploy",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/49-part-d.png",
+    "ink": "screens/1920x1080/ink/49-part-d.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/49-part-d.png",
+    "ink": "screens/1366x768/ink/49-part-d.png"
+   }
+  }
+ },
+ {
+  "n": 50,
+  "idx": "50",
+  "id": "deploy-plan",
+  "part": "D",
+  "title": "From folder to live URL",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/50-deploy-plan.png",
+    "ink": "screens/1920x1080/ink/50-deploy-plan.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/50-deploy-plan.png",
+    "ink": "screens/1366x768/ink/50-deploy-plan.png"
+   }
+  }
+ },
+ {
+  "n": 51,
+  "idx": "51",
+  "id": "build-page",
+  "part": "D",
+  "title": "Build the page in the terminal",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/51-build-page.png",
+    "ink": "screens/1920x1080/ink/51-build-page.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/51-build-page.png",
+    "ink": "screens/1366x768/ink/51-build-page.png"
+   }
+  }
+ },
+ {
+  "n": 52,
+  "idx": "52",
+  "id": "version-control",
+  "part": "D",
+  "title": "Put it under version control",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/52-version-control.png",
+    "ink": "screens/1920x1080/ink/52-version-control.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/52-version-control.png",
+    "ink": "screens/1366x768/ink/52-version-control.png"
+   }
+  }
+ },
+ {
+  "n": 53,
+  "idx": "53",
+  "id": "link-repo",
+  "part": "D",
+  "title": "Link the repo and go live",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/53-link-repo.png",
+    "ink": "screens/1920x1080/ink/53-link-repo.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/53-link-repo.png",
+    "ink": "screens/1366x768/ink/53-link-repo.png"
+   }
+  }
+ },
+ {
+  "n": 54,
+  "idx": "54",
+  "id": "server-deploy",
+  "part": "D",
+  "title": "Classic route: scp plus nginx",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/54-server-deploy.png",
+    "ink": "screens/1920x1080/ink/54-server-deploy.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/54-server-deploy.png",
+    "ink": "screens/1366x768/ink/54-server-deploy.png"
+   }
+  }
+ },
+ {
+  "n": 55,
+  "idx": "55",
+  "id": "pipeline-yaml",
+  "part": "D",
+  "title": "CI/CD, written with OpenCode",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/55-pipeline-yaml.png",
+    "ink": "screens/1920x1080/ink/55-pipeline-yaml.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/55-pipeline-yaml.png",
+    "ink": "screens/1366x768/ink/55-pipeline-yaml.png"
+   }
+  }
+ },
+ {
+  "n": 56,
+  "idx": "56",
+  "id": "poisonous-vs-healthy",
+  "part": "D",
+  "title": "Poisonous push vs healthy push",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/56-poisonous-vs-healthy.png",
+    "ink": "screens/1920x1080/ink/56-poisonous-vs-healthy.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/56-poisonous-vs-healthy.png",
+    "ink": "screens/1366x768/ink/56-poisonous-vs-healthy.png"
+   }
+  }
+ },
+ {
+  "n": 57,
+  "idx": "57",
+  "id": "safe-to-push",
+  "part": "D",
+  "title": "What is safe to push",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/57-safe-to-push.png",
+    "ink": "screens/1920x1080/ink/57-safe-to-push.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/57-safe-to-push.png",
+    "ink": "screens/1366x768/ink/57-safe-to-push.png"
+   }
+  }
+ },
+ {
+  "n": 58,
+  "idx": "58",
+  "id": "security-layers",
+  "part": "D",
+  "title": "Four layers of protection",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/58-security-layers.png",
+    "ink": "screens/1920x1080/ink/58-security-layers.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/58-security-layers.png",
+    "ink": "screens/1366x768/ink/58-security-layers.png"
+   }
+  }
+ },
+ {
+  "n": 59,
+  "idx": "59",
+  "id": "pipeline-attack-surface",
+  "part": "D",
+  "title": "Pipelines are attack surfaces too",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/59-pipeline-attack-surface.png",
+    "ink": "screens/1920x1080/ink/59-pipeline-attack-surface.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/59-pipeline-attack-surface.png",
+    "ink": "screens/1366x768/ink/59-pipeline-attack-surface.png"
+   }
+  }
+ },
+ {
+  "n": 60,
+  "idx": "60",
+  "id": "part-closing",
+  "part": "closing",
+  "title": "Closing",
+  "badge": "SLIDE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/60-part-closing.png",
+    "ink": "screens/1920x1080/ink/60-part-closing.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/60-part-closing.png",
+    "ink": "screens/1366x768/ink/60-part-closing.png"
+   }
+  }
+ },
+ {
+  "n": 61,
+  "idx": "61",
+  "id": "take-home-launch",
+  "part": "closing",
+  "title": "Take the controls home",
+  "badge": "LIVE",
+  "shots": {
+   "1920x1080": {
+    "paper": "screens/1920x1080/paper/61-take-home-launch.png",
+    "ink": "screens/1920x1080/ink/61-take-home-launch.png"
+   },
+   "1366x768": {
+    "paper": "screens/1366x768/paper/61-take-home-launch.png",
+    "ink": "screens/1366x768/ink/61-take-home-launch.png"
+   }
+  }
+ }
+]

@@ -1,0 +1,146 @@
+[
+  {
+    "id": "F-01",
+    "severity": "High",
+    "scene": "boot (00-boot.png)",
+    "element": "BootSequence auto-advance (src/components/BootSequence.jsx:30-43)",
+    "problem": "The finale timeout is scheduled in the same effect pass as the login timeout, so the login commit's effect cleanup cancels the still-pending finale. The boot log reaches the login prompt and stalls there forever; the title never auto-resolves.",
+    "evidence": "6/6 consecutive loads stuck on 'laptop login:' + 'press any key to skip' at 2-10s (probe logs); 7/7 boot lines render by ~1.1s then nothing; only 1 of 7 observed runs completed (commit-timing race).",
+    "fix": "Chain the timeouts: schedule the finale inside the login commit (or use a single timeout straight to title) so completion never depends on React commit timing."
+  },
+  {
+    "id": "F-02",
+    "severity": "High",
+    "scene": "choose-your-os (1366x768, both themes)",
+    "element": "Quiz + comparison table stacking",
+    "problem": "Content overflows the fixed slide by 163px at 1366x768: the scene title is clipped at the top and the distro table is cut off at the bottom. The internal quiz scroll only covers the question list, not the whole scene.",
+    "evidence": "audit/layout.json overflowY=163 on 1366/paper+ink; audit/screens/1366x768/paper/07-choose-your-os.png.",
+    "fix": "Cap the whole quiz block (not just the question list) in a scroll region under short viewports, or move the comparison table to its own reveal step."
+  },
+  {
+    "id": "F-03",
+    "severity": "High",
+    "scene": "poisonous-vs-healthy (1366x768, both themes)",
+    "element": "Compact PipelineDiagram row (src/components/PipelineDiagram.jsx)",
+    "problem": "The 4-stage pipeline row is wider than its column at 1366px: the 4th node (Deploy/Verify) is clipped off the column edge on both sides with no scroll affordance. Outcome boxes are pushed 16px below the fold.",
+    "evidence": "audit/screens/1366x768/paper/56-poisonous-vs-healthy.png; layout.json overflowY=16.",
+    "fix": "Let compact pipelines wrap to two rows under ~1500px width, or shrink node min-width (sm:w-40) at the lg breakpoint."
+  },
+  {
+    "id": "F-04",
+    "severity": "High",
+    "scene": "take-home-launch (1366x768, both themes)",
+    "element": "Table + bullets + terminal stack",
+    "problem": "Stack overflows by 36px: the terminal replay button and exit line are cut off at the bottom.",
+    "evidence": "audit/layout.json overflowY=36; audit/screens/1366x768/paper/61-take-home-launch.png.",
+    "fix": "Trim vertical rhythm on this scene at short heights (tighter table padding) or allow the terminal its own scroll region."
+  },
+  {
+    "id": "F-05",
+    "severity": "High",
+    "scene": "where-linux-runs (1366x768, both themes)",
+    "element": "Numbered list, item 06 body",
+    "problem": "Sixth item body text ('Push-tested Linux containers') is cut 27px below the fold.",
+    "evidence": "audit/layout.json overflowY=27; audit/screens/1366x768/paper/08-where-linux-runs.png.",
+    "fix": "Tighten numbered-list row spacing under 800px viewport height, or shorten the sixth item body."
+  },
+  {
+    "id": "F-06",
+    "severity": "Medium",
+    "scene": "text-processing (1366x768, both themes)",
+    "element": "PipeFlow 4-up row + caption",
+    "problem": "Caption and replay control clipped 15px below the fold; pipe stage outputs truncate mid-word ('200 /ir', '2 404 /miss') in narrow columns with no way to reveal the hidden text.",
+    "evidence": "audit/screens/1366x768/paper/18-text-processing.png; layout.json overflowY=15.",
+    "fix": "Stack pipe stages vertically below the lg breakpoint and let stage outputs wrap instead of truncating."
+  },
+  {
+    "id": "F-07",
+    "severity": "Medium",
+    "scene": "34 scenes (all terminals, quiz list, playground, file panes)",
+    "element": "Scrollable regions (axe: scrollable-region-focusable, serious)",
+    "problem": "Every scrollable region (terminal x-scroll, quiz question list, playground output, code panes) is missing keyboard focusability, so keyboard-only users cannot scroll clipped content.",
+    "evidence": "audit/inventory.json axe section: scrollable-region-focusable in 34 scene-runs.",
+    "fix": "Add tabindex=\"0\" with an aria-label to each scroll region (TerminalWindow body, Quiz list, playground output, file panes)."
+  },
+  {
+    "id": "F-08",
+    "severity": "Medium",
+    "scene": "17 scene-instances (deploy-plan, link-repo, server-deploy, text-processing, scheduler-sim, duel, packages, processes, networking-ssh)",
+    "element": "Idle/dimmed labels and small faint text (axe: color-contrast, serious)",
+    "problem": "Dimmed idle states (unlit pipeline nodes, unreached pipe stages, 0.72rem faint labels, scheduler P3/P4 chips) fail AA contrast. Some are intentional inactive states, but they still carry information.",
+    "evidence": "audit/inventory.json axe section: color-contrast in 17 runs; e.g. idle 'Live URL' label, dim pipe commands.",
+    "fix": "Raise idle-state text to the muted token (4.7:1 paper) and mark purely decorative dimmed nodes aria-hidden, or acceptlist inactive states explicitly."
+  },
+  {
+    "id": "F-09",
+    "severity": "Medium",
+    "scene": "grid overview (G)",
+    "element": "Search + Enter (src/components/GridOverview.jsx onKeyDown)",
+    "problem": "Typing a query then pressing Enter does nothing: the handler returns early for INPUT targets and selection never follows the filter, so keyboard users must click the card.",
+    "evidence": "Probe: typed 'thrashing', pressed Enter, stayed on scene 1. Code: early return on e.target INPUT with no Enter path.",
+    "fix": "On Enter inside the search field, jump to the first filtered result (or move selection into the filtered list)."
+  },
+  {
+    "id": "F-10",
+    "severity": "Medium",
+    "scene": "choose-your-os (both viewports, both themes)",
+    "element": "Quiz question number badges (src/components/Quiz.jsx)",
+    "problem": "The absolute-positioned question numbers ('1'–'5') overlap the question text ('Time', 'Which').",
+    "evidence": "audit/screens/1920x1080/paper/07-choose-your-os.png and 1366x768 variant.",
+    "fix": "Add left padding to the question text (pl-4) or move the number into the header row."
+  },
+  {
+    "id": "F-11",
+    "severity": "Medium",
+    "scene": "global (markers, captions, option hints)",
+    "element": "Sub-14px small labels (0.68rem–0.72rem mono, 0.62em hints)",
+    "problem": "Dozens of labels render at 10.9–11.5px, below the design system's own 14px floor for small markers and marginal on projectors.",
+    "evidence": "audit/inventory.json typography sample: 0.68rem x12, 0.7rem x12, 0.72rem x40 at <12px computed.",
+    "fix": "Raise small-label minimums to 0.875rem (14px) and option hints to 0.75em."
+  },
+  {
+    "id": "F-12",
+    "severity": "Low",
+    "scene": "n/a (source hygiene)",
+    "element": "Dead emoji icon data (src/content/scenes.js, 45 icon fields)",
+    "problem": "45 emoji icon values ship in content but no renderer reads them; dead weight and a trap for future editors.",
+    "evidence": "Code search: zero renders of block.icon/c.icon in src/components and src/slides.",
+    "fix": "Delete the icon fields from scenes.js (data-only change, no visual effect)."
+  },
+  {
+    "id": "F-13",
+    "severity": "Low",
+    "scene": "take-home-launch",
+    "element": "Placeholder contacts (github.com/your-handle)",
+    "problem": "Demo contact details are displayed as-is on the closing slide; presenting without replacing them exposes placeholder text.",
+    "evidence": "audit/screens/1920x1080/paper/61-take-home-launch.png lines 3-5 of contact output.",
+    "fix": "Replace deckMeta placeholders before presenting (already documented in README)."
+  },
+  {
+    "id": "F-14",
+    "severity": "Low",
+    "scene": "server-review",
+    "element": "ServerDashboard 1400ms interval (src/components/PoisonPush.jsx)",
+    "problem": "The dashboard jitter loop keeps firing setState on hidden tabs; reduced/calm disable it but background tabs do not pause it.",
+    "evidence": "Code search: setInterval without visibility guard.",
+    "fix": "Skip ticks while document.hidden, matching the old backdrop behavior."
+  },
+  {
+    "id": "F-15",
+    "severity": "Low",
+    "scene": "poisonous-vs-healthy (+ paging sims)",
+    "element": "Pass/fail hue under protanopia",
+    "problem": "Under protanopia simulation, fail-red and pass-green collapse to similar olives; meaning survives only via the ✕/✓ shapes and Failing/Passing text labels.",
+    "evidence": "audit/sim-56-poisonous-vs-healthy-protan.png vs -grey.png.",
+    "fix": "No change required (redundant encoding works); do not rely on hue alone in future additions."
+  },
+  {
+    "id": "F-16",
+    "severity": "Low",
+    "scene": "global HUD",
+    "element": "Footer hint line vs command chip at 1366x768",
+    "problem": "The bottom-left command chip overlaps the footer shortcut hints on short viewports (hints hide only under 700px height).",
+    "evidence": "audit/screens/1366x768/paper/61-take-home-launch.png bottom-left corner.",
+    "fix": "Hide footer hints below 800px height instead of 700px, or dock the chip above the footer line."
+  }
+]

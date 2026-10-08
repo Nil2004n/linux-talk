@@ -1,0 +1,2060 @@
+[
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 0,
+  "id": "boot",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 1,
+  "id": "hook",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 2,
+  "id": "part-a",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 3,
+  "id": "why-linux",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 4,
+  "id": "why-linux-vs-windows",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 5,
+  "id": "cpu-architectures",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 6,
+  "id": "distro-types",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 7,
+  "id": "choose-your-os",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 8,
+  "id": "where-linux-runs",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 9,
+  "id": "linus-torvalds",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 10,
+  "id": "part-b",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 11,
+  "id": "navigation",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 12,
+  "id": "directory-hierarchy",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 13,
+  "id": "files-directories",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 14,
+  "id": "editing-files",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 15,
+  "id": "no-mouse-challenge",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 16,
+  "id": "shell-basics",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "li:nth-child(1) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">200 /index.html\n404 /missing.html\n200 /style.css\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(2) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(4) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">2 404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 17,
+  "id": "permissions",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "li:nth-child(1) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">200 /index.html\n404 /missing.html\n200 /style.css\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(2) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(4) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">2 404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 18,
+  "id": "text-processing",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .text-\\[clamp\\(0\\.95rem\\,1\\.2vw\\,1\\.2rem\\)\\]"
+      ],
+      "html": "<code class=\"font-mono text-[clamp(0.95rem,1.2vw,1.2rem)]\" style=\"color: var(--color-ink-faint);\">sort</code>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.19 (foreground color: #aeafb3, background color: #ffffff, font size: 14.4pt (19.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.52 (foreground color: #a2a3a7, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "li:nth-child(4) > .p-3.min-w-0.flex-1 > .text-\\[clamp\\(0\\.95rem\\,1\\.2vw\\,1\\.2rem\\)\\]"
+      ],
+      "html": "<code class=\"font-mono text-[clamp(0.95rem,1.2vw,1.2rem)]\" style=\"color: var(--color-ink-faint);\">uniq -c</code>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.19 (foreground color: #aeafb3, background color: #ffffff, font size: 14.4pt (19.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   },
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "li:nth-child(1) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">200 /index.html\n404 /missing.html\n200 /style.css\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(2) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(4) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">2 404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 19,
+  "id": "archiving",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "li:nth-child(1) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">200 /index.html\n404 /missing.html\n200 /style.css\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(2) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(4) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">2 404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 20,
+  "id": "packages",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       ".min-w-0.flex-col.flex:nth-child(1) > .min-h-0.flex-col.flex > .rounded-none.border.bg-abyss > .overflow-y-auto.slide-rail.sm\\:p-4 > .gap-1.min-h-0[role=\"log\"] > div:nth-child(2) > .fs-term-out"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"opacity: 0;\">Setting up git...</pre>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #929499, background color: #ffffff, font size: 12.6pt (16.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   },
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".lg\\:items-center.lg\\:flex-row:nth-child(1) > .p-3.flex-1.min-w-0 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">200 /index.html\n404 /missing.html\n200 /style.css\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".lg\\:items-center.lg\\:flex-row:nth-child(2) > .p-3.flex-1.min-w-0 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".lg\\:items-center.lg\\:flex-row:nth-child(3) > .p-3.flex-1.min-w-0 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".lg\\:items-center.lg\\:flex-row:nth-child(4) > .p-3.flex-1.min-w-0 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">2 404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 21,
+  "id": "part-c",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 22,
+  "id": "server-review",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 23,
+  "id": "processes",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"ps, & and kill transcript\"] > div:nth-child(2) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"opacity: 0;\">[1]+  running    python3 -m http.server 8000</pre>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #a3a4a9, background color: #ffffff, font size: 12.6pt (16.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 24,
+  "id": "systemd",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"build.sh transcript\"] > div:nth-child(1) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"color: var(--color-cyan); opacity: 1;\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 25,
+  "id": "networking-ssh",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"build.sh transcript\"] > div:nth-child(1) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"color: var(--color-cyan); opacity: 1;\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 26,
+  "id": "shell-scripting",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"build.sh transcript\"] > div:nth-child(1) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"color: var(--color-cyan); opacity: 1;\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 27,
+  "id": "containers",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"build.sh transcript\"] > div:nth-child(1) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"color: var(--color-cyan); opacity: 1;\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 28,
+  "id": "user-management",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"build.sh transcript\"] > div:nth-child(1) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"color: var(--color-cyan); opacity: 1;\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 29,
+  "id": "links",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 30,
+  "id": "disks-filesystems",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "main"
+      ],
+      "html": "<main data-mode=\"slide\" class=\"slide-rail fixed inset-0 z-10 snap-y snap-proximity overflow-y-scroll overflow-x-hidden scroll-smooth\" aria-label=\"Linux presentation slides\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 31,
+  "id": "c2-title",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "main"
+      ],
+      "html": "<main data-mode=\"slide\" class=\"slide-rail fixed inset-0 z-10 snap-y snap-proximity overflow-y-scroll overflow-x-hidden scroll-smooth\" aria-label=\"Linux presentation slides\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 32,
+  "id": "c2-scheduler-what",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 33,
+  "id": "c2-scheduler-algos",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 34,
+  "id": "c2-scheduler-sim",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       ".h-full.place-items-center.grid:nth-child(3) > .text-\\[0\\.7rem\\].font-mono"
+      ],
+      "html": "<span class=\"font-mono text-[0.7rem]\" style=\"color: var(--color-ink-faint);\">P3</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 1.6 (foreground color: #cbcccf, background color: #ffffff, font size: 8.4pt (11.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       ".h-full.place-items-center.grid:nth-child(4) > .text-\\[0\\.7rem\\].font-mono"
+      ],
+      "html": "<span class=\"font-mono text-[0.7rem]\" style=\"color: var(--color-ink-faint);\">P4</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 1.6 (foreground color: #cbcccf, background color: #ffffff, font size: 8.4pt (11.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 35,
+  "id": "c2-linux-cfs",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 36,
+  "id": "c2-proof-cpu",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 37,
+  "id": "c2-disk-why",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 38,
+  "id": "c2-disk-algos",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 39,
+  "id": "c2-disk-sim",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 40,
+  "id": "c2-linux-iosched",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 41,
+  "id": "c2-proof-disk",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 42,
+  "id": "c2-vm-picture",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 43,
+  "id": "c2-fault-kinds",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 44,
+  "id": "c2-replacement",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 45,
+  "id": "c2-paging-sim",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 46,
+  "id": "c2-thrashing",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 47,
+  "id": "c2-proof-mem",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 48,
+  "id": "c2-bridge",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 49,
+  "id": "part-d",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 50,
+  "id": "deploy-plan",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "li[aria-label=\"Live URL: idle\"] > .py-3.gap-1.px-3 > .leading-tight.fs-card.font-display"
+      ],
+      "html": "<span class=\"font-display font-semibold leading-tight fs-card\" style=\"color: var(--color-ink-faint);\">Live URL</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.34 (foreground color: #a5a6aa, background color: #fbfbf9, font size: 18.0pt (24px), font weight: normal). Expected contrast ratio of 3:1"
+     },
+     {
+      "target": [
+       "li[aria-label=\"Live URL: idle\"] > .py-3.gap-1.px-3 > code"
+      ],
+      "html": "<code class=\"truncate font-mono text-[0.75rem] text-ink-faint\">curl -I</code>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.34 (foreground color: #a5a6aa, background color: #fbfbf9, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "li[aria-label=\"Live URL: idle\"] > .py-3.gap-1.px-3 > .max-w-\\[26ch\\].text-\\[0\\.72rem\\].leading-snug"
+      ],
+      "html": "<span class=\"max-w-[26ch] text-[0.72rem] leading-snug text-ink-faint\">public address</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.34 (foreground color: #a5a6aa, background color: #fbfbf9, font size: 8.6pt (11.52px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 51,
+  "id": "build-page",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 52,
+  "id": "version-control",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 53,
+  "id": "link-repo",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "#slide-54 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(3) > .flex-1.min-w-0 > .text-\\[clamp\\(1rem\\,1\\.3vw\\,1\\.25rem\\)\\].font-mono > .font-semibold.text-ink"
+      ],
+      "html": "<span class=\"font-semibold text-ink\">curl -I https://student-site.example</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #959698, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "#slide-54 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(3) > .flex-1.min-w-0 > .text-\\[clamp\\(0\\.88rem\\,1\\.08vw\\,1\\.02rem\\)\\].mt-0\\.5.text-ink-dim"
+      ],
+      "html": "<p class=\"mt-0.5 text-[clamp(0.88rem,1.08vw,1.02rem)] text-ink-dim\">Live URL answers 200</p>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.08 (foreground color: #b3b3b7, background color: #ffffff, font size: 12.2pt (16.32px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 54,
+  "id": "server-deploy",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "#slide-55 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(2) > .flex-1.min-w-0 > .text-\\[clamp\\(1rem\\,1\\.3vw\\,1\\.25rem\\)\\].font-mono > .font-semibold.text-ink"
+      ],
+      "html": "<span class=\"font-semibold text-ink\">systemctl status nginx</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #959698, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "#slide-55 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(2) > .flex-1.min-w-0 > .text-\\[clamp\\(0\\.88rem\\,1\\.08vw\\,1\\.02rem\\)\\].mt-0\\.5.text-ink-dim"
+      ],
+      "html": "<p class=\"mt-0.5 text-[clamp(0.88rem,1.08vw,1.02rem)] text-ink-dim\">Service is active and enabled</p>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.08 (foreground color: #b3b3b7, background color: #ffffff, font size: 12.2pt (16.32px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "#slide-55 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(3) > .flex-1.min-w-0 > .text-\\[clamp\\(1rem\\,1\\.3vw\\,1\\.25rem\\)\\].font-mono > .font-semibold.text-ink"
+      ],
+      "html": "<span class=\"font-semibold text-ink\">curl -I http://203.0.113.7</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.96 (foreground color: #959698, background color: #ffffff, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "#slide-55 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(3) > .flex-1.min-w-0 > .text-\\[clamp\\(0\\.88rem\\,1\\.08vw\\,1\\.02rem\\)\\].mt-0\\.5.text-ink-dim"
+      ],
+      "html": "<p class=\"mt-0.5 text-[clamp(0.88rem,1.08vw,1.02rem)] text-ink-dim\">Server answers 200</p>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.08 (foreground color: #b3b3b7, background color: #ffffff, font size: 12.2pt (16.32px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   },
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(3) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(2) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 55,
+  "id": "pipeline-yaml",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(3) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(2) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "section[aria-label=\"Healthy push\"] > .max-h-\\[4\\.75rem\\].rounded-lg.bg-abyss\\/75"
+      ],
+      "html": "<pre class=\"relative max-h-[4.75rem] shrink-0 overflow-y-auto rounded-lg border border-line bg-abyss/75 px-3 py-0.5 font-mono text-[clamp(0.78rem,0.92vw,0.92rem)] leading-snug\" aria-live=\"off\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 56,
+  "id": "poisonous-vs-healthy",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "section[aria-label=\"Poisonous push\"] > .shrink-0.min-h-0.relative > .sm\\:flex-row[aria-label=\"Pipeline stages\"] > .sm\\:flex-none.sm\\:w-40.text-center:nth-child(3) > .gap-0\\.5.gap-1.py-1\\.5 > .leading-tight.font-display.font-semibold"
+      ],
+      "html": "<span class=\"font-display font-semibold leading-tight text-[0.85rem]\" style=\"color: var(--color-ink-faint);\">Build</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 1.87 (foreground color: #bcbdc1, background color: #ffffff, font size: 10.2pt (13.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   },
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(3) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(2) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 57,
+  "id": "safe-to-push",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(3) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(2) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 58,
+  "id": "security-layers",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(3) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(2) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "section[aria-label=\"Healthy push\"] > .max-h-\\[4\\.75rem\\].rounded-lg.bg-abyss\\/75"
+      ],
+      "html": "<pre class=\"relative max-h-[4.75rem] shrink-0 overflow-y-auto rounded-lg border border-line bg-abyss/75 px-3 py-0.5 font-mono text-[clamp(0.78rem,0.92vw,0.92rem)] leading-snug\" aria-live=\"off\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 59,
+  "id": "pipeline-attack-surface",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 60,
+  "id": "part-closing",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "paper",
+  "idx": 61,
+  "id": "take-home-launch",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 0,
+  "id": "boot",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 1,
+  "id": "hook",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 2,
+  "id": "part-a",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 3,
+  "id": "why-linux",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 4,
+  "id": "why-linux-vs-windows",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 5,
+  "id": "cpu-architectures",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 6,
+  "id": "distro-types",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 7,
+  "id": "choose-your-os",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 8,
+  "id": "where-linux-runs",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 9,
+  "id": "linus-torvalds",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 10,
+  "id": "part-b",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 11,
+  "id": "navigation",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 12,
+  "id": "directory-hierarchy",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 13,
+  "id": "files-directories",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 14,
+  "id": "editing-files",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 15,
+  "id": "no-mouse-challenge",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 16,
+  "id": "shell-basics",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "li:nth-child(1) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">200 /index.html\n404 /missing.html\n200 /style.css\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(2) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(4) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">2 404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 17,
+  "id": "permissions",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "li:nth-child(1) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">200 /index.html\n404 /missing.html\n200 /style.css\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(2) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(4) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">2 404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 18,
+  "id": "text-processing",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .text-\\[clamp\\(0\\.95rem\\,1\\.2vw\\,1\\.2rem\\)\\]"
+      ],
+      "html": "<code class=\"font-mono text-[clamp(0.95rem,1.2vw,1.2rem)]\" style=\"color: var(--color-ink-faint);\">sort</code>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #54575f, background color: #15171b, font size: 14.4pt (19.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #64666c, background color: #15171b, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "li:nth-child(4) > .p-3.min-w-0.flex-1 > .text-\\[clamp\\(0\\.95rem\\,1\\.2vw\\,1\\.2rem\\)\\]"
+      ],
+      "html": "<code class=\"font-mono text-[clamp(0.95rem,1.2vw,1.2rem)]\" style=\"color: var(--color-ink-faint);\">uniq -c</code>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.48 (foreground color: #54575f, background color: #15171b, font size: 14.4pt (19.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   },
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "li:nth-child(1) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">200 /index.html\n404 /missing.html\n200 /style.css\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(2) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(4) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">2 404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 19,
+  "id": "archiving",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "li:nth-child(1) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">200 /index.html\n404 /missing.html\n200 /style.css\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(2) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(3) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "li:nth-child(4) > .p-3.min-w-0.flex-1 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">2 404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 20,
+  "id": "packages",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       ".min-w-0.flex-col.flex:nth-child(1) > .min-h-0.flex-col.flex > .rounded-none.border.bg-abyss > .overflow-y-auto.slide-rail.sm\\:p-4 > .gap-1.min-h-0[role=\"log\"] > div:nth-child(2) > .fs-term-out"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"opacity: 0;\">Setting up git...</pre>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 3.03 (foreground color: #62646a, background color: #15171b, font size: 12.6pt (16.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   },
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".lg\\:items-center.lg\\:flex-row:nth-child(1) > .p-3.flex-1.min-w-0 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">200 /index.html\n404 /missing.html\n200 /style.css\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".lg\\:items-center.lg\\:flex-row:nth-child(2) > .p-3.flex-1.min-w-0 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".lg\\:items-center.lg\\:flex-row:nth-child(3) > .p-3.flex-1.min-w-0 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">404 /missing.html\n404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".lg\\:items-center.lg\\:flex-row:nth-child(4) > .p-3.flex-1.min-w-0 > .mt-1\\.5.text-\\[clamp\\(0\\.8rem\\,1rem\\,1\\.05rem\\)\\].leading-snug"
+      ],
+      "html": "<pre class=\"mt-1.5 overflow-x-auto whitespace-pre font-mono text-[clamp(0.8rem,1rem,1.05rem)] leading-snug text-ink-dim\">2 404 /missing.html</pre>",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 21,
+  "id": "part-c",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 22,
+  "id": "server-review",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 23,
+  "id": "processes",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"ps, & and kill transcript\"] > div:nth-child(2) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"opacity: 0;\">[1]+  running    python3 -m http.server 8000</pre>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 4.24 (foreground color: #797b82, background color: #15171b, font size: 12.6pt (16.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 24,
+  "id": "systemd",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"build.sh transcript\"] > div:nth-child(1) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"color: var(--color-cyan); opacity: 1;\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 25,
+  "id": "networking-ssh",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"network tools transcript\"] > div:nth-child(2) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"opacity: 0;\">HTTP/2 200</pre>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.55 (foreground color: #57595e, background color: #15171b, font size: 12.6pt (16.8px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   },
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"build.sh transcript\"] > div:nth-child(1) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"color: var(--color-cyan); opacity: 1;\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 26,
+  "id": "shell-scripting",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"build.sh transcript\"] > div:nth-child(1) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"color: var(--color-cyan); opacity: 1;\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 27,
+  "id": "containers",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"build.sh transcript\"] > div:nth-child(1) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"color: var(--color-cyan); opacity: 1;\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 28,
+  "id": "user-management",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "div[aria-label=\"build.sh transcript\"] > div:nth-child(1) > pre"
+      ],
+      "html": "<pre class=\"fs-term-out overflow-x-auto whitespace-pre font-mono text-ink-dim \" style=\"color: var(--color-cyan); opacity: 1;\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 29,
+  "id": "links",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 30,
+  "id": "disks-filesystems",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "main"
+      ],
+      "html": "<main data-mode=\"slide\" class=\"slide-rail fixed inset-0 z-10 snap-y snap-proximity overflow-y-scroll overflow-x-hidden scroll-smooth\" aria-label=\"Linux presentation slides\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 31,
+  "id": "c2-title",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       "main"
+      ],
+      "html": "<main data-mode=\"slide\" class=\"slide-rail fixed inset-0 z-10 snap-y snap-proximity overflow-y-scroll overflow-x-hidden scroll-smooth\" aria-label=\"Linux presentation slides\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 32,
+  "id": "c2-scheduler-what",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 33,
+  "id": "c2-scheduler-algos",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 34,
+  "id": "c2-scheduler-sim",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       ".h-full.place-items-center.grid:nth-child(3) > .text-\\[0\\.7rem\\].font-mono"
+      ],
+      "html": "<span class=\"font-mono text-[0.7rem]\" style=\"color: var(--color-ink-faint);\">P3</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 1.72 (foreground color: #3d4046, background color: #15171b, font size: 8.4pt (11.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       ".h-full.place-items-center.grid:nth-child(4) > .text-\\[0\\.7rem\\].font-mono"
+      ],
+      "html": "<span class=\"font-mono text-[0.7rem]\" style=\"color: var(--color-ink-faint);\">P4</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 1.72 (foreground color: #3d4046, background color: #15171b, font size: 8.4pt (11.2px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 35,
+  "id": "c2-linux-cfs",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 36,
+  "id": "c2-proof-cpu",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 37,
+  "id": "c2-disk-why",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 38,
+  "id": "c2-disk-algos",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 39,
+  "id": "c2-disk-sim",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 40,
+  "id": "c2-linux-iosched",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 41,
+  "id": "c2-proof-disk",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 42,
+  "id": "c2-vm-picture",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 43,
+  "id": "c2-fault-kinds",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 44,
+  "id": "c2-replacement",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 45,
+  "id": "c2-paging-sim",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 46,
+  "id": "c2-thrashing",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 47,
+  "id": "c2-proof-mem",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 48,
+  "id": "c2-bridge",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 49,
+  "id": "part-d",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 50,
+  "id": "deploy-plan",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "li[aria-label=\"Live URL: idle\"] > .py-3.gap-1.px-3 > .leading-tight.fs-card.font-display"
+      ],
+      "html": "<span class=\"font-display font-semibold leading-tight fs-card\" style=\"color: var(--color-ink-faint);\">Live URL</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.74 (foreground color: #585c63, background color: #121417, font size: 18.0pt (24px), font weight: normal). Expected contrast ratio of 3:1"
+     },
+     {
+      "target": [
+       "li[aria-label=\"Live URL: idle\"] > .py-3.gap-1.px-3 > code"
+      ],
+      "html": "<code class=\"truncate font-mono text-[0.75rem] text-ink-faint\">curl -I</code>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.74 (foreground color: #585c63, background color: #121417, font size: 9.0pt (12px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "li[aria-label=\"Live URL: idle\"] > .py-3.gap-1.px-3 > .max-w-\\[26ch\\].text-\\[0\\.72rem\\].leading-snug"
+      ],
+      "html": "<span class=\"max-w-[26ch] text-[0.72rem] leading-snug text-ink-faint\">public address</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.74 (foreground color: #585c63, background color: #121417, font size: 8.6pt (11.52px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 51,
+  "id": "build-page",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 52,
+  "id": "version-control",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 53,
+  "id": "link-repo",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "#slide-54 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(3) > .flex-1.min-w-0 > .text-\\[clamp\\(1rem\\,1\\.3vw\\,1\\.25rem\\)\\].font-mono > .font-semibold.text-ink"
+      ],
+      "html": "<span class=\"font-semibold text-ink\">curl -I https://student-site.example</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #76777a, background color: #15171b, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "#slide-54 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(3) > .flex-1.min-w-0 > .text-\\[clamp\\(0\\.88rem\\,1\\.08vw\\,1\\.02rem\\)\\].mt-0\\.5.text-ink-dim"
+      ],
+      "html": "<p class=\"mt-0.5 text-[clamp(0.88rem,1.08vw,1.02rem)] text-ink-dim\">Live URL answers 200</p>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #55585d, background color: #15171b, font size: 12.2pt (16.32px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 54,
+  "id": "server-deploy",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "#slide-55 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(2) > .flex-1.min-w-0 > .text-\\[clamp\\(1rem\\,1\\.3vw\\,1\\.25rem\\)\\].font-mono > .font-semibold.text-ink"
+      ],
+      "html": "<span class=\"font-semibold text-ink\">systemctl status nginx</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #76777a, background color: #15171b, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "#slide-55 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(2) > .flex-1.min-w-0 > .text-\\[clamp\\(0\\.88rem\\,1\\.08vw\\,1\\.02rem\\)\\].mt-0\\.5.text-ink-dim"
+      ],
+      "html": "<p class=\"mt-0.5 text-[clamp(0.88rem,1.08vw,1.02rem)] text-ink-dim\">Service is active and enabled</p>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #55585d, background color: #15171b, font size: 12.2pt (16.32px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "#slide-55 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(3) > .flex-1.min-w-0 > .text-\\[clamp\\(1rem\\,1\\.3vw\\,1\\.25rem\\)\\].font-mono > .font-semibold.text-ink"
+      ],
+      "html": "<span class=\"font-semibold text-ink\">curl -I http://203.0.113.7</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 4 (foreground color: #76777a, background color: #15171b, font size: 15.0pt (20px), font weight: normal). Expected contrast ratio of 4.5:1"
+     },
+     {
+      "target": [
+       "#slide-55 > .pad-slide.mx-auto.max-w-\\[var\\(--slide-max\\)\\] > .min-h-0 > .items-start.grid.min-h-0 > .min-w-0.flex-col.flex > .min-h-0.flex-col.flex > .bg-abyss.rounded-md.border > ol > .py-2\\.5.last\\:border-b-0.items-start:nth-child(3) > .flex-1.min-w-0 > .text-\\[clamp\\(0\\.88rem\\,1\\.08vw\\,1\\.02rem\\)\\].mt-0\\.5.text-ink-dim"
+      ],
+      "html": "<p class=\"mt-0.5 text-[clamp(0.88rem,1.08vw,1.02rem)] text-ink-dim\">Server answers 200</p>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.51 (foreground color: #55585d, background color: #15171b, font size: 12.2pt (16.32px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   },
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(3) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(2) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 55,
+  "id": "pipeline-yaml",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(3) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(2) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "section[aria-label=\"Healthy push\"] > .max-h-\\[4\\.75rem\\].rounded-lg.bg-abyss\\/75"
+      ],
+      "html": "<pre class=\"relative max-h-[4.75rem] shrink-0 overflow-y-auto rounded-lg border border-line bg-abyss/75 px-3 py-0.5 font-mono text-[clamp(0.78rem,0.92vw,0.92rem)] leading-snug\" aria-live=\"off\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 56,
+  "id": "poisonous-vs-healthy",
+  "violations": [
+   {
+    "id": "color-contrast",
+    "impact": "serious",
+    "help": "Elements must meet minimum color contrast ratio thresholds",
+    "nodes": [
+     {
+      "target": [
+       "section[aria-label=\"Poisonous push\"] > .shrink-0.min-h-0.relative > .sm\\:flex-row[aria-label=\"Pipeline stages\"] > .sm\\:flex-none.sm\\:w-40.text-center:nth-child(3) > .gap-0\\.5.gap-1.py-1\\.5 > .leading-tight.font-display.font-semibold"
+      ],
+      "html": "<span class=\"font-display font-semibold leading-tight text-[0.85rem]\" style=\"color: var(--color-ink-faint);\">Build</span>",
+      "failure": "Fix any of the following:\n  Element has insufficient color contrast of 2.07 (foreground color: #484c52, background color: #15171b, font size: 10.2pt (13.6px), font weight: normal). Expected contrast ratio of 4.5:1"
+     }
+    ]
+   },
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(3) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(2) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 57,
+  "id": "safe-to-push",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(3) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(2) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 58,
+  "id": "security-layers",
+  "violations": [
+   {
+    "id": "scrollable-region-focusable",
+    "impact": "serious",
+    "help": "Scrollable region must have keyboard access",
+    "nodes": [
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(3) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       ".bg-abyss.rounded-md.border:nth-child(2) > .max-h-\\[4\\.5rem\\].text-\\[clamp\\(0\\.8rem\\,0\\.98vw\\,1rem\\)\\].overflow-y-auto"
+      ],
+      "html": "<pre class=\"max-h-[4.5rem] overflow-y-auto whitespace-pre px-3 py-1 font-mono text-[clamp(0.8rem,0.98vw,1rem)] leading-snug text-ink-dim\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     },
+     {
+      "target": [
+       "section[aria-label=\"Healthy push\"] > .max-h-\\[4\\.75rem\\].rounded-lg.bg-abyss\\/75"
+      ],
+      "html": "<pre class=\"relative max-h-[4.75rem] shrink-0 overflow-y-auto rounded-lg border border-line bg-abyss/75 px-3 py-0.5 font-mono text-[clamp(0.78rem,0.92vw,0.92rem)] leading-snug\" aria-live=\"off\">",
+      "failure": "Fix any of the following:\n  Element should have focusable content\n  Element should be focusable"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 59,
+  "id": "pipeline-attack-surface",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 60,
+  "id": "part-closing",
+  "violations": []
+ },
+ {
+  "vp": "1920x1080",
+  "theme": "ink",
+  "idx": 61,
+  "id": "take-home-launch",
+  "violations": []
+ }
+]

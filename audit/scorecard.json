@@ -1,0 +1,1242 @@
+[
+ {
+  "n": 0,
+  "id": "boot",
+  "part": "intro",
+  "title": "(part card)",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 3,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "markers and login text render 12-15px",
+  "avg": 3.9
+ },
+ {
+  "n": 1,
+  "id": "hook",
+  "part": "intro",
+  "title": "Linux runs the internet. The terminal is how you drive it.",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 5,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 5
+  },
+  "note": "",
+  "avg": 4.2
+ },
+ {
+  "n": 2,
+  "id": "part-a",
+  "part": "A",
+  "title": "Why Linux",
+  "scores": {
+   "focal": 5,
+   "hierarchy": 5,
+   "typography": 5,
+   "colour": 5,
+   "layout": 5,
+   "density": 5,
+   "components": 5,
+   "diagrams": 5,
+   "polish": 5,
+   "slop": 5
+  },
+  "note": "",
+  "avg": 5
+ },
+ {
+  "n": 3,
+  "id": "why-linux",
+  "part": "A",
+  "title": "Why use Linux",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 5,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 5
+  },
+  "note": "numbered list is the pattern working as intended",
+  "avg": 4.2
+ },
+ {
+  "n": 4,
+  "id": "why-linux-vs-windows",
+  "part": "A",
+  "title": "Better for developers and servers",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 5,
+  "id": "cpu-architectures",
+  "part": "A",
+  "title": "CPU architectures: x86_64, ARM, RISC-V",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 6,
+  "id": "distro-types",
+  "part": "A",
+  "title": "Same kernel, different personalities",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 7,
+  "id": "choose-your-os",
+  "part": "A",
+  "title": "Choosing your OS",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 3,
+   "colour": 4,
+   "layout": 3,
+   "density": 2,
+   "components": 3,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "quiz plus table overflows 1366 by 163px; title clipped; number badges overlap questions",
+  "avg": 3.5
+ },
+ {
+  "n": 8,
+  "id": "where-linux-runs",
+  "part": "A",
+  "title": "Where Linux is used",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 3,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "last item body cut 27px at 1366",
+  "avg": 3.9
+ },
+ {
+  "n": 9,
+  "id": "linus-torvalds",
+  "part": "A",
+  "title": "Git and Linux share one inventor",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 10,
+  "id": "part-b",
+  "part": "B",
+  "title": "Terminal fundamentals",
+  "scores": {
+   "focal": 5,
+   "hierarchy": 5,
+   "typography": 5,
+   "colour": 5,
+   "layout": 5,
+   "density": 5,
+   "components": 5,
+   "diagrams": 5,
+   "polish": 5,
+   "slop": 5
+  },
+  "note": "",
+  "avg": 5
+ },
+ {
+  "n": 11,
+  "id": "navigation",
+  "part": "B",
+  "title": "Navigation and basic commands",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 12,
+  "id": "directory-hierarchy",
+  "part": "B",
+  "title": "Directory hierarchy",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 13,
+  "id": "files-directories",
+  "part": "B",
+  "title": "Create, move, copy, rename, delete",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 14,
+  "id": "editing-files",
+  "part": "B",
+  "title": "Editing files with nano and mousepad",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 15,
+  "id": "no-mouse-challenge",
+  "part": "B",
+  "title": "Coding without an IDE: the no-mouse challenge",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 16,
+  "id": "shell-basics",
+  "part": "B",
+  "title": "Shell basics: PATH, variables, redirects, sudo",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 17,
+  "id": "permissions",
+  "part": "B",
+  "title": "File permissions: chmod and chown",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 18,
+  "id": "text-processing",
+  "part": "B",
+  "title": "Text processing and pipes",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 3,
+   "density": 4,
+   "components": 3,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "caption cut and pipe outputs truncated at 1366",
+  "avg": 3.8
+ },
+ {
+  "n": 19,
+  "id": "archiving",
+  "part": "B",
+  "title": "Archiving and compressing",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 20,
+  "id": "packages",
+  "part": "B",
+  "title": "Package management and npm",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 21,
+  "id": "part-c",
+  "part": "C",
+  "title": "Servers and system",
+  "scores": {
+   "focal": 5,
+   "hierarchy": 5,
+   "typography": 5,
+   "colour": 5,
+   "layout": 5,
+   "density": 5,
+   "components": 5,
+   "diagrams": 5,
+   "polish": 5,
+   "slop": 5
+  },
+  "note": "",
+  "avg": 5
+ },
+ {
+  "n": 22,
+  "id": "server-review",
+  "part": "C",
+  "title": "Server review: uptime, memory, disk, top",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 23,
+  "id": "processes",
+  "part": "C",
+  "title": "Process management: ps and kill",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 24,
+  "id": "systemd",
+  "part": "C",
+  "title": "Services with systemd",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 25,
+  "id": "networking-ssh",
+  "part": "C",
+  "title": "Networking and SSH",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 26,
+  "id": "shell-scripting",
+  "part": "C",
+  "title": "Shell scripting",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 27,
+  "id": "containers",
+  "part": "C",
+  "title": "Containers and Docker",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 28,
+  "id": "user-management",
+  "part": "C",
+  "title": "User management",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 29,
+  "id": "links",
+  "part": "C",
+  "title": "Soft links and hard links",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 30,
+  "id": "disks-filesystems",
+  "part": "C",
+  "title": "Disks, filesystems, LVM and booting",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 31,
+  "id": "c2-title",
+  "part": "C2",
+  "title": "Three referees, one machine",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 32,
+  "id": "c2-scheduler-what",
+  "part": "C2",
+  "title": "Many processes, one CPU",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 33,
+  "id": "c2-scheduler-algos",
+  "part": "C2",
+  "title": "Four classic schedulers",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 34,
+  "id": "c2-scheduler-sim",
+  "part": "C2",
+  "title": "Watch the schedulers race",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "dense but fits; mid-run state verified",
+  "avg": 4
+ },
+ {
+  "n": 35,
+  "id": "c2-linux-cfs",
+  "part": "C2",
+  "title": "Linux shares fairly, then hurries the urgent",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 36,
+  "id": "c2-proof-cpu",
+  "part": "C2",
+  "title": "See scheduling on this machine",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 37,
+  "id": "c2-disk-why",
+  "part": "C2",
+  "title": "Disks are slow movers",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 38,
+  "id": "c2-disk-algos",
+  "part": "C2",
+  "title": "Five ways to sweep a disk",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 39,
+  "id": "c2-disk-sim",
+  "part": "C2",
+  "title": "Race the disk head",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 40,
+  "id": "c2-linux-iosched",
+  "part": "C2",
+  "title": "Linux calls them I/O schedulers",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 41,
+  "id": "c2-proof-disk",
+  "part": "C2",
+  "title": "Read your own scheduler",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 42,
+  "id": "c2-vm-picture",
+  "part": "C2",
+  "title": "Every process gets a private illusion",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 43,
+  "id": "c2-fault-kinds",
+  "part": "C2",
+  "title": "A page fault is usually not an error",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 44,
+  "id": "c2-replacement",
+  "part": "C2",
+  "title": "Three eviction strategies",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 45,
+  "id": "c2-paging-sim",
+  "part": "C2",
+  "title": "Fault your way through memory",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 46,
+  "id": "c2-thrashing",
+  "part": "C2",
+  "title": "Thrashing: all swap, no work",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 47,
+  "id": "c2-proof-mem",
+  "part": "C2",
+  "title": "Count real page faults",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 48,
+  "id": "c2-bridge",
+  "part": "C2",
+  "title": "Three referees, one machine",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 49,
+  "id": "part-d",
+  "part": "D",
+  "title": "GitHub to deploy",
+  "scores": {
+   "focal": 5,
+   "hierarchy": 5,
+   "typography": 5,
+   "colour": 5,
+   "layout": 5,
+   "density": 5,
+   "components": 5,
+   "diagrams": 5,
+   "polish": 5,
+   "slop": 5
+  },
+  "note": "",
+  "avg": 5
+ },
+ {
+  "n": 50,
+  "id": "deploy-plan",
+  "part": "D",
+  "title": "From folder to live URL",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 51,
+  "id": "build-page",
+  "part": "D",
+  "title": "Build the page in the terminal",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 52,
+  "id": "version-control",
+  "part": "D",
+  "title": "Put it under version control",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 53,
+  "id": "link-repo",
+  "part": "D",
+  "title": "Link the repo and go live",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 54,
+  "id": "server-deploy",
+  "part": "D",
+  "title": "Classic route: scp plus nginx",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 55,
+  "id": "pipeline-yaml",
+  "part": "D",
+  "title": "CI/CD, written with OpenCode",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 3,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "pipeline plus 12-line YAML is the densest compliant scene",
+  "avg": 3.9
+ },
+ {
+  "n": 56,
+  "id": "poisonous-vs-healthy",
+  "part": "D",
+  "title": "Poisonous push vs healthy push",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 3,
+   "density": 4,
+   "components": 3,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "fourth pipeline node clipped horizontally at 1366",
+  "avg": 3.8
+ },
+ {
+  "n": 57,
+  "id": "safe-to-push",
+  "part": "D",
+  "title": "What is safe to push",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 58,
+  "id": "security-layers",
+  "part": "D",
+  "title": "Four layers of protection",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 59,
+  "id": "pipeline-attack-surface",
+  "part": "D",
+  "title": "Pipelines are attack surfaces too",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 4,
+   "density": 4,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "",
+  "avg": 4
+ },
+ {
+  "n": 60,
+  "id": "part-closing",
+  "part": "closing",
+  "title": "Closing",
+  "scores": {
+   "focal": 5,
+   "hierarchy": 5,
+   "typography": 5,
+   "colour": 5,
+   "layout": 5,
+   "density": 5,
+   "components": 5,
+   "diagrams": 5,
+   "polish": 5,
+   "slop": 5
+  },
+  "note": "",
+  "avg": 5
+ },
+ {
+  "n": 61,
+  "id": "take-home-launch",
+  "part": "closing",
+  "title": "Take the controls home",
+  "scores": {
+   "focal": 4,
+   "hierarchy": 4,
+   "typography": 4,
+   "colour": 4,
+   "layout": 3,
+   "density": 3,
+   "components": 4,
+   "diagrams": 4,
+   "polish": 4,
+   "slop": 4
+  },
+  "note": "replay control and exit line cut 36px at 1366",
+  "avg": 3.8
+ }
+]
