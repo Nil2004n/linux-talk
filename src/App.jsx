@@ -1,4 +1,4 @@
-import { Suspense, lazy, useCallback, useEffect, useMemo, useState } from 'react'
+import { Suspense, lazy, useCallback, useEffect, useMemo, useState, useRef } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion'
 import { scenes, partIndex, deckMeta } from './content/scenes'
 import { PARTS } from './lib/constants'
@@ -18,6 +18,8 @@ import CommandChip from './components/CommandChip'
 import Slide from './components/Slide'
 import Badge from './components/Badge'
 import { countSlideSteps, renderSlideBody } from './slides/renderSlide'
+import Lenis from 'lenis'
+import 'lenis/dist/lenis.css'
 
 // The grid overview is only needed on demand, so it is split out of the main
 // bundle and loaded the first time the presenter presses G.
@@ -30,6 +32,7 @@ export default function App() {
   const osReduced = !!useReducedMotion()
   const total = scenes.length
   const { mode, toggleMode } = usePresentationMode()
+  const { isFullscreen, toggle: toggleFullscreen } = useFullscreen()
 
   const [calm, toggleCalm] = useToggle(false, 'deck.calm')
   const [soundOn, toggleSound] = useToggle(false, 'deck.sound')
@@ -69,53 +72,20 @@ export default function App() {
     else delete document.documentElement.dataset.calm
   }, [calm])
 
-  const { railRef, registerSlide, activeIndex, goTo } =
-    useSlideNavigation(total, { reduced: still, mode })
-
   const [gridOpen, toggleGrid] = useToggle(false, 'deck.grid')
   const [presenter, togglePresenter] = useToggle(false, 'deck.presenter')
   const [helpOpen, toggleHelp] = useToggle(false, 'deck.help')
   const [stepMap, setStepMap] = useState({})
   const [replayToken, setReplayToken] = useState(0)
-  // Last-known pixel height of each fully-rendered section. Far sections in
-  // scroll mode render a fixed placeholder; reserving the measured height
-  // keeps the scrollbar stable instead of shifting as bodies mount.
-  const [heights, setHeights] = useState({})
 
-  useEffect(() => {
-    const rail = railRef.current
-    if (!rail) return undefined
-    const ro = new ResizeObserver((entries) => {
-      setHeights((prev) => {
-        let changed = false
-        const next = { ...prev }
-        for (const entry of entries) {
-          const i = Number(entry.target.dataset.slideIndex)
-          if (!Number.isInteger(i)) continue
-          // Never memorize placeholder height — only real bodies count.
-          if (entry.target.querySelector('[data-body-placeholder]')) continue
-          const h = Math.round(entry.contentRect.height)
-          if (Math.abs((next[i] ?? 0) - h) > 2) {
-            next[i] = h
-            changed = true
-          }
-        }
-        return changed ? next : prev
-      })
+  const stepHandlersRef = useRef({ onStepNext: null, onStepPrev: null })
+
+  const { railRef, registerSlide, activeIndex, goTo } =
+    useSlideNavigation(total, {
+      reduced: still,
+      mode,
+      stepHandlersRef,
     })
-    const els = []
-    rail.querySelectorAll('[data-slide-index]').forEach((el) => {
-      els.push(el)
-      ro.observe(el)
-    })
-    return () => ro.disconnect()
-  }, [total, mode])
-
-  const { isFullscreen, toggle: toggleFullscreen } = useFullscreen()
-
-  const active = scenes[activeIndex] ?? scenes[0]
-  const maxSteps = countSlideSteps(active)
-  const stepIndex = Math.max(0, Math.min(stepMap[activeIndex] ?? 0, maxSteps - 1))
 
   const goToStep = useCallback(
     (index, step) => {
@@ -126,28 +96,46 @@ export default function App() {
     [goTo, scenes.length],
   )
 
+  // Step-through handlers
   const stepNext = useCallback(() => {
     if (gridOpen || helpOpen) return
-    if (stepIndex < maxSteps - 1) {
+    const activeScene = scenes[activeIndex] ?? scenes[0]
+    const max = countSlideSteps(activeScene)
+    const current = Math.max(0, Math.min(stepMap[activeIndex] ?? 0, max - 1))
+    if (current < max - 1) {
       playSound('key')
-      setStepMap((prev) => ({ ...prev, [activeIndex]: stepIndex + 1 }))
+      setStepMap((prev) => ({ ...prev, [activeIndex]: current + 1 }))
     } else if (activeIndex < total - 1) {
       playSound('key')
       goToStep(activeIndex + 1, 0)
     }
-  }, [gridOpen, helpOpen, stepIndex, maxSteps, activeIndex, total, goToStep])
+  }, [gridOpen, helpOpen, activeIndex, stepMap, total, goToStep])
 
   const stepPrev = useCallback(() => {
     if (gridOpen || helpOpen) return
-    if (stepIndex > 0) {
+    const current = stepMap[activeIndex] ?? 0
+    if (current > 0) {
       playSound('key')
-      setStepMap((prev) => ({ ...prev, [activeIndex]: stepIndex - 1 }))
+      setStepMap((prev) => ({ ...prev, [activeIndex]: current - 1 }))
     } else if (activeIndex > 0) {
       playSound('key')
       const target = activeIndex - 1
       goToStep(target, countSlideSteps(scenes[target]) - 1)
     }
-  }, [gridOpen, helpOpen, stepIndex, activeIndex, goToStep])
+  }, [gridOpen, helpOpen, activeIndex, stepMap, goToStep])
+
+  useEffect(() => {
+    stepHandlersRef.current = { onStepNext: stepNext, onStepPrev: stepPrev }
+  }, [stepNext, stepPrev])
+
+  // Last-known pixel height of each fully-rendered section. Far sections in
+  // scroll mode render a fixed placeholder; reserving the measured height
+  // keeps the scrollbar stable instead of shifting as bodies mount.
+  const heightsRef = useRef({})
+
+  const active = scenes[activeIndex] ?? scenes[0]
+  const maxSteps = countSlideSteps(active)
+  const stepIndex = Math.max(0, Math.min(stepMap[activeIndex] ?? 0, maxSteps - 1))
 
   const goFirst = useCallback(() => goToStep(0, 0), [goToStep])
   const goLast = useCallback(() => {
@@ -251,9 +239,8 @@ export default function App() {
           onClick={toggleCalm}
           aria-pressed={calm}
           title="Calm mode: disable background effects and heavy animation"
-          className={`rounded-md border border-line bg-abyss px-3 py-1.5 font-mono text-[0.7rem] tracking-[0.04em] transition-colors hover:text-ink ${
-            calm ? 'text-ink' : 'text-ink-dim'
-          }`}
+          className={`rounded-md border border-line bg-abyss px-3 py-1.5 font-mono text-[0.7rem] tracking-[0.04em] transition-colors hover:text-ink ${calm ? 'text-ink' : 'text-ink-dim'
+            }`}
         >
           {calm ? 'Calm on' : 'Calm'}
         </button>
@@ -262,9 +249,8 @@ export default function App() {
           onClick={toggleSound}
           aria-pressed={soundOn}
           title="Sound: subtle key clicks and success/fail tones (off by default)"
-          className={`rounded-md border border-line bg-abyss px-3 py-1.5 font-mono text-[0.7rem] tracking-[0.04em] transition-colors hover:text-ink ${
-            soundOn ? 'text-ink' : 'text-ink-dim'
-          }`}
+          className={`rounded-md border border-line bg-abyss px-3 py-1.5 font-mono text-[0.7rem] tracking-[0.04em] transition-colors hover:text-ink ${soundOn ? 'text-ink' : 'text-ink-dim'
+            }`}
         >
           {soundOn ? 'Sound on' : 'Sound'}
         </button>
@@ -290,62 +276,65 @@ export default function App() {
         data-mode={mode}
         className={
           mode === 'slide'
-            ? 'slide-rail fixed inset-0 z-10 snap-y snap-proximity overflow-y-scroll overflow-x-hidden scroll-smooth'
+            ? 'slide-rail fixed inset-0 z-10 overflow-y-scroll overflow-x-hidden'
             : 'slide-rail fixed inset-0 z-10 overflow-y-auto overflow-x-hidden overscroll-contain'
         }
         aria-label="Linux presentation slides"
       >
-        {scenes.map((slide, i) => {
-          // Render scene bodies only near the viewport. A full deck mounts
-          // every terminal, table and canvas at once otherwise, which dominated
-          // first paint. The window is +/-2 scenes so that a one-scene step
-          // always has its destination already mounted: content is ready before
-          // the scroll lands, never revealed after it. Off-screen sections keep
-          // their last measured height (see the heights map above), so mounting
-          // a body never shifts the page.
-          const near = Math.abs(i - activeIndex) <= 2
-          // Scroll mode only: slide mode sections are exactly 100dvh, where a
-          // reserved min-height would break the snap layout.
-          const reserved = mode === 'scroll' && !near && heights[i] != null ? { minHeight: heights[i] } : undefined
-          return (
-          <div
-            key={slide.id}
-            ref={registerSlide(i)}
-            data-slide-index={i}
-            style={reserved}
-            className={mode === 'slide' ? 'h-[100dvh] snap-start snap-always' : 'min-h-[100dvh]'}
-          >
-            <Slide
-              key={i === activeIndex ? `${slide.id}-${replayToken}` : slide.id}
-              index={i}
-              total={total}
-              part={slide.part}
-              kicker={slide.kicker}
-              title={slide.kind === 'part' ? null : slide.title}
-              lead={slide.lead}
-              id={{ ...slide, index: i }}
-              active={near}
-              level={i === 0 ? 1 : 2}
-              tight={slide.tight}
-              fluid={mode === 'scroll'}
-              reduced={still}
-            >
-              {slide.kind === 'part' ? null : (
-                <div className="mb-3 flex flex-wrap items-center gap-3">
-                  <Badge kind={slide.badge} />
-                  <span className="font-mono text-[0.8rem] tracking-[0.04em] text-ink-faint">
-                    {PARTS[slide.part]?.name}
-                  </span>
-                </div>
-              )}
-              {renderSlideBody(slide, {
-                reduced: still,
-                visibleSteps: i === activeIndex ? stepIndex + 1 : Infinity,
-              })}
-            </Slide>
-          </div>
-          )
-        })}
+        <div className={mode === 'slide' ? 'contents' : 'lenis-content'}>
+          {scenes.map((slide, i) => {
+            // Render scene bodies only near the viewport. A full deck mounts
+            // every terminal, table and canvas at once otherwise, which dominated
+            // first paint. The window is +/-2 scenes so that a one-scene step
+            // always has its destination already mounted: content is ready before
+            // the scroll lands, never revealed after it. Off-screen sections keep
+            // their last measured height (see the heights map above), so mounting
+            // a body never shifts the page.
+            const near = Math.abs(i - activeIndex) <= 2
+            // Scroll mode only: slide mode sections are exactly 100dvh, where a
+            // reserved min-height would break the snap layout.
+            const reserved = mode === 'scroll' && !near && heightsRef.current[i] != null ? { minHeight: heightsRef.current[i] } : undefined
+            return (
+              <div
+                key={slide.id}
+                ref={registerSlide(i)}
+                data-slide-index={i}
+                style={reserved}
+                className={mode === 'slide' ? 'h-[100dvh] overflow-hidden' : 'min-h-[100dvh]'}
+              >
+                <Slide
+                  key={slide.id}
+                  replayToken={i === activeIndex ? replayToken : 0}
+                  index={i}
+                  total={total}
+                  part={slide.part}
+                  kicker={slide.kicker}
+                  title={slide.kind === 'part' ? null : slide.title}
+                  lead={slide.lead}
+                  id={{ ...slide, index: i }}
+                  active={near}
+                  level={i === 0 ? 1 : 2}
+                  tight={slide.tight}
+                  fluid={mode === 'scroll'}
+                  reduced={still}
+                >
+                  {slide.kind === 'part' ? null : (
+                    <div className="mb-3 flex flex-wrap items-center gap-3">
+                      <Badge kind={slide.badge} />
+                      <span className="font-mono text-[0.8rem] tracking-[0.04em] text-ink-faint">
+                        {PARTS[slide.part]?.name}
+                      </span>
+                    </div>
+                  )}
+                  {renderSlideBody(slide, {
+                    reduced: still,
+                    visibleSteps: i === activeIndex ? stepIndex + 1 : Infinity,
+                  })}
+                </Slide>
+              </div>
+            )
+          })}
+        </div>
       </main>
 
       <footer className="pointer-events-none fixed inset-x-0 bottom-0 z-30 flex items-center justify-between gap-4 px-4 py-3 font-mono text-[0.68rem] text-ink-faint print:hidden">

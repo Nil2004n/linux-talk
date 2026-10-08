@@ -41,10 +41,9 @@ export function useSlideFit(minScale = 0.7) {
       const ratio = available / needed
       let next = current * ratio
 
-      // Below 1: always shrink, so a dense slide always settles.
-      // Above 1: only grow on an explicit resize / font-load, otherwise the
+      // Only grow on an explicit viewport resize or font-load, otherwise the
       // measure -> scale -> resize-observer cycle oscillates forever.
-      if (next > 1 && !allowGrow) return
+      if (next > current && !allowGrow) return
       next = Math.max(minScale, Math.min(1, next))
       next = Math.round(next * 1000) / 1000
 

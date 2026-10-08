@@ -33,6 +33,7 @@ export default function Slide({
   /** Rendered only when near the viewport; see `deferBody` in App. */
   active = true,
   fluid = false,
+  replayToken = 0,
 }) {
   const [fitRef, fitScale] = useSlideFit(0.7)
   // `id` is the full scene object plus its index ({ ...slide, index }), which
@@ -46,9 +47,8 @@ export default function Slide({
     <section
       ref={fitRef}
       id={`slide-${index + 1}`}
-      className={`relative z-10 flex w-full ${
-        fluid ? 'min-h-[100dvh] py-20' : 'h-[100dvh] snap-start snap-always overflow-hidden'
-      } ${align === 'top' ? 'items-start' : 'items-center'} ${className}`}
+      className={`relative z-10 flex w-full ${fluid ? 'min-h-[100dvh] py-20' : 'h-[100dvh] overflow-hidden'
+        } ${align === 'top' ? 'items-start' : 'items-center'} ${className}`}
       aria-labelledby={kicker || title ? heading : undefined}
       aria-label={kicker || title ? undefined : `Slide ${index + 1}`}
       style={{ '--h-scale': fitScale }}
@@ -82,6 +82,7 @@ export default function Slide({
         )}
 
         <motion.div
+          key={replayToken}
           className="min-h-0"
           initial={reduced ? false : { opacity: 0 }}
           animate={{ opacity: 1 }}
