@@ -4,6 +4,7 @@ import ScriptedTerminal from '../components/ScriptedTerminal'
 import BootSequence from '../components/BootSequence'
 import LiveTerminalPlayground from '../components/LiveTerminalPlayground'
 import CompareTable from '../components/CompareTable'
+import FeedbackForm from '../components/FeedbackForm'
 import PipelineDiagram from '../components/PipelineDiagram'
 import { Stagger, Reveal } from '../components/PartHeader'
 import Quiz from '../components/Quiz'
@@ -108,6 +109,9 @@ function renderBlock(block, key, ctx) {
           </Callout>
         </Reveal>
       )
+
+    case 'feedback':
+      return <FeedbackForm key={key} url={block.url} title={block.title} />
 
     case 'terminal':
       return (

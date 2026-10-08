@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { PALETTE } from '../lib/constants'
+import { useSceneVisible } from '../hooks/useSceneVisible'
 
 const FRAMES = 14
 
@@ -10,6 +11,7 @@ const FRAMES = 14
 export default function ThrashingSim({ reduced = false }) {
   const [runId, setRunId] = useState(0)
   const [frame, setFrame] = useState(reduced ? FRAMES : 0)
+  const visible = useSceneVisible()
 
   useEffect(() => {
     if (reduced) {
@@ -17,6 +19,7 @@ export default function ThrashingSim({ reduced = false }) {
       return undefined
     }
     setFrame(0)
+    if (!visible) return undefined
     const id = window.setInterval(() => {
       setFrame((f) => {
         if (f >= FRAMES) {
@@ -27,7 +30,7 @@ export default function ThrashingSim({ reduced = false }) {
       })
     }, 420)
     return () => window.clearInterval(id)
-  }, [reduced, runId])
+  }, [reduced, runId, visible])
 
   const t = frame / FRAMES
   const cpu = Math.round(72 * (1 - t) + 6 * t)

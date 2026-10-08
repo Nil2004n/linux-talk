@@ -14,7 +14,7 @@ backend, no external APIs, no analytics, no secrets, no `.env` files. Fonts
 fully offline. There are no timers, clocks, countdowns, duration labels,
 matrix-rain effects, or novelty-command material anywhere in the experience.
 
-**Keyboard driven · 24px+ body text · slide and scroll modes · paper/ink themes**
+**Keyboard driven · 24px+ body text · continuous scroll page · paper/ink themes**
 
 ---
 
@@ -45,7 +45,6 @@ GitHub-connected host.
 | `Home` / `End` | First / last scene |
 | `1` – `5` | Jump to Part A, B, C, C2 or D |
 | `G` | Grid overview of every scene |
-| `M` | Toggle slide mode / scroll mode |
 | `F` | Toggle fullscreen |
 | `P` | Toggle the speaker-notes panel |
 | `R` | Replay the current scene's animation |
@@ -54,9 +53,10 @@ GitHub-connected host.
 | `Esc` | Close the open overlay |
 
 Arrow keys are ignored while a text field has focus, so the interactive
-terminal playground and the grid search stay usable. Mode, presenter and grid
-state persist in `localStorage` across reloads. On small or touch-first
-screens the deck starts in scroll mode.
+terminal playground and the grid search stay usable. Presenter and grid
+state persist in `localStorage` across reloads. The deck is one continuous
+page: every scene renders in normal document flow, so the browser scrollbar,
+find-in-page and print all work naturally.
 
 The top HUD is a 2px accent hairline with a mono `A B C C2 D` part indicator
 at the bottom centre. The bottom-left chip shows the command of the scene —

@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { PALETTE } from '../lib/constants'
 import { compareVerdict, CPU_ALGORITHMS, CPU_META, DEFAULT_PROCESSES, simulateCPU, verdictCPU } from '../lib/os-sims/cpu.js'
 import CompareTable from './CompareTable'
+import { useSceneVisible } from '../hooks/useSceneVisible'
 
 const STEP_MS = 520
 
@@ -25,6 +26,7 @@ export default function SchedulerSim({
   const [runId, setRunId] = useState(0)
   const [reached, setReached] = useState(0)
   const [compare, setCompare] = useState(false)
+  const visible = useSceneVisible()
   const [algoB, setAlgoB] = useState('rr')
 
   const result = useMemo(
@@ -41,8 +43,9 @@ export default function SchedulerSim({
       setReached(result.segments.length)
       return undefined
     }
+    if (!visible) { setReached(0); return undefined }
     setReached(0)
-    if (!result.segments.length) return undefined
+    if (!visible || !result.segments.length) return undefined
     const id = window.setInterval(() => {
       setReached((n) => {
         if (n >= result.segments.length) {
@@ -53,7 +56,7 @@ export default function SchedulerSim({
       })
     }, STEP_MS)
     return () => window.clearInterval(id)
-  }, [reduced, result.segments.length, runId, rows, algo, q])
+  }, [reduced, result.segments.length, runId, rows, algo, q, visible])
 
   const shown = result.segments.slice(0, reached)
   const done = reached >= result.segments.length

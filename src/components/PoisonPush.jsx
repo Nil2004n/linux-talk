@@ -2,6 +2,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { PALETTE } from '../lib/constants'
 import { useMotionPrefs } from '../hooks/useMotionPrefs'
+import { useSceneVisible } from '../hooks/useSceneVisible'
 import PipelineDiagram from './PipelineDiagram'
 
 /**
@@ -148,13 +149,15 @@ function Side({ title, subtitle, file, fileLines, stages, log, outcome, tone, re
 function Log({ lines = [], tone, reduced, step }) {
   const [shown, setShown] = useState(reduced ? lines.length : 0)
 
+  const visible = useSceneVisible()
+
   useEffect(() => {
-    if (reduced) return undefined
+    if (reduced || !visible) return undefined
     const id = window.setInterval(() => {
       setShown((n) => (n >= lines.length ? n : n + 1))
     }, step * 1000)
     return () => window.clearInterval(id)
-  }, [reduced, step, lines.length])
+  }, [reduced, step, lines.length, visible])
 
   const color = tone === 'bad' ? PALETTE.red : PALETTE.green
 
@@ -195,12 +198,13 @@ export function ServerDashboard({
   const { reduced: rm } = useMotionPrefs()
   const still = reduced || rm
   const [tick, setTick] = useState(0)
+  const visible = useSceneVisible()
 
   useEffect(() => {
-    if (still) return undefined
+    if (still || !visible) return undefined
     const t = window.setInterval(() => setTick((n) => n + 1), 1400)
     return () => window.clearInterval(t)
-  }, [still])
+  }, [still, visible])
 
   // Deterministic pseudo-jitter: stable per metric id, no Math.random churn.
   const valueFor = (m, i) => {

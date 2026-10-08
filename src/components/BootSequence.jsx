@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { PALETTE } from '../lib/constants'
+import { useSceneVisible } from '../hooks/useSceneVisible'
 
 const BOOT_LINES = [
   'Linux version 6.8.0-student (build@linux) (gcc 13.2.0)',
@@ -26,8 +27,10 @@ export default function BootSequence({
 }) {
   const [lines, setLines] = useState(reduced ? BOOT_LINES.length : 0)
   const [phase, setPhase] = useState(reduced ? 'title' : 'boot')
+  const visible = useSceneVisible()
 
   useEffect(() => {
+    if (!visible) return undefined
     if (reduced) return undefined
     if (phase !== 'boot') return undefined
     if (lines >= BOOT_LINES.length) {
@@ -40,7 +43,7 @@ export default function BootSequence({
     }
     const id = window.setTimeout(() => setLines((n) => n + 1), 135)
     return () => window.clearTimeout(id)
-  }, [lines, phase, reduced])
+  }, [lines, phase, reduced, visible])
 
   useEffect(() => {
     if (reduced || phase === 'title') return undefined

@@ -2,6 +2,7 @@ import { motion } from 'framer-motion'
 import { PALETTE } from '../lib/constants'
 import { useEffect, useState } from 'react'
 import { useMotionPrefs } from '../hooks/useMotionPrefs'
+import { useSceneVisible } from '../hooks/useSceneVisible'
 
 /**
  * Animated CI/CD stage pipeline.
@@ -28,14 +29,15 @@ export default function PipelineDiagram({
   // remount this component with a different React `key`:
   // that resets the counter without any effect-driven state juggling.
   const [reached, setReached] = useState(still ? stages.length : 0)
+  const visible = useSceneVisible()
 
   useEffect(() => {
-    if (still) return undefined
+    if (still || !visible) return undefined
     const id = window.setInterval(() => {
       setReached((n) => (n >= stages.length ? n : n + 1))
     }, stepInterval * 1000)
     return () => window.clearInterval(id)
-  }, [still, stepInterval, stages.length])
+  }, [still, stepInterval, stages.length, visible])
 
   const statusOf = (stage, i) => {
     if (stage.status) return stage.status

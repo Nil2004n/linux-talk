@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { PALETTE } from '../lib/constants'
+import { useSceneVisible } from '../hooks/useSceneVisible'
 
 /**
  * Animated terminal deployment flow.
@@ -12,12 +13,14 @@ export default function DeployFlow({ title = 'deployment', steps = [], reduced =
   const [runId, setRunId] = useState(0)
   const [reached, setReached] = useState(reduced ? steps.length : 0)
   const still = reduced
+  const visible = useSceneVisible()
 
   useEffect(() => {
     if (still) {
       setReached(steps.length)
       return undefined
     }
+    if (!visible) return undefined
     setReached(0)
     if (!steps.length) return undefined
     const id = window.setInterval(() => {
@@ -30,7 +33,7 @@ export default function DeployFlow({ title = 'deployment', steps = [], reduced =
       })
     }, stepMs)
     return () => window.clearInterval(id)
-  }, [still, stepMs, steps.length, runId])
+  }, [still, stepMs, steps.length, runId, visible])
 
   const replay = useCallback(() => setRunId((n) => n + 1), [])
 

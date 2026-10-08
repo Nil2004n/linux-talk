@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import TerminalWindow, { Output } from './TerminalWindow'
 import { PALETTE } from '../lib/constants'
+import { useSceneVisible } from '../hooks/useSceneVisible'
 
 const TYPING_CEILING_MS = 620
 const MIN_CHAR_MS = 8
@@ -39,6 +40,7 @@ export default function ScriptedTerminal({
   const [activeStep, setActiveStep] = useState(() => (reduced || !autoPlay ? script.length : 0))
   const [chars, setChars] = useState(0)
   const [showOutput, setShowOutput] = useState(reduced || !autoPlay)
+  const visible = useSceneVisible()
   const timers = useRef([])
 
   const clearTimers = useCallback(() => {
@@ -59,6 +61,7 @@ export default function ScriptedTerminal({
 
   useEffect(() => {
     clearTimers()
+    if (!visible) return undefined
     if (reduced || !autoPlay || script.length === 0) {
       setFinishedSteps(script.length)
       setActiveStep(script.length)
@@ -118,7 +121,7 @@ export default function ScriptedTerminal({
       cancelled = true
       clearTimers()
     }
-  }, [autoPlay, clearTimers, later, reduced, runId, script])
+  }, [autoPlay, clearTimers, later, reduced, runId, script, visible])
 
   const replay = useCallback(() => {
     setRunId((n) => n + 1)

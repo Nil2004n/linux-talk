@@ -2212,6 +2212,21 @@ export const scenes = [
       },
     ],
   },
+
+  {
+    id: 'student-feedback',
+    part: 'closing',
+    kind: 'blocks',
+    badge: 'TAKE-HOME',
+    kicker: 'Closing · feedback',
+    title: 'Student feedback: two minutes',
+    lead: 'Tell us what landed and what to fix before next semester.',
+    command: 'echo "thanks for coming"',
+    notes: 'Leave this scene open while students file out; the form is embedded here as well as linked below.',
+    body: [
+      { type: 'feedback', url: 'https://forms.gle/hLpzKbThQ17wNZSD6', title: 'Student feedback form' },
+    ],
+  },
 ]
 
 /** Derived index of the first scene in each part, used by number-key jumps. */

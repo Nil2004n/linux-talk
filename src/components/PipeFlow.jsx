@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { PALETTE } from '../lib/constants'
+import { useSceneVisible } from '../hooks/useSceneVisible'
 
 /**
  * Animated pipe flow.
@@ -12,12 +13,14 @@ export default function PipeFlow({ cmd, stages = [], caption, reduced = false, s
   const [runId, setRunId] = useState(0)
   const [reached, setReached] = useState(reduced ? stages.length : 0)
   const still = reduced
+  const visible = useSceneVisible()
 
   useEffect(() => {
     if (still) {
       setReached(stages.length)
       return undefined
     }
+    if (!visible) return undefined
     setReached(0)
     if (stages.length === 0) return undefined
     const id = window.setInterval(() => {
@@ -30,7 +33,7 @@ export default function PipeFlow({ cmd, stages = [], caption, reduced = false, s
       })
     }, stepMs)
     return () => window.clearInterval(id)
-  }, [still, stepMs, stages.length, runId])
+  }, [still, stepMs, stages.length, runId, visible])
 
   const replay = useCallback(() => {
     setRunId((n) => n + 1)

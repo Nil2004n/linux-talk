@@ -1,5 +1,6 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useMotionPrefs } from '../hooks/useMotionPrefs'
+import { useSceneVisible } from '../hooks/useSceneVisible'
 
 const GLYPHS = '▓▒░<>/\\|=+*#@$%&01'
 
@@ -12,10 +13,12 @@ const GLYPHS = '▓▒░<>/\\|=+*#@$%&01'
  */
 export default function DecodeText({ text = '', as: Tag = 'span', className = '', id }) {
   const { reduced } = useMotionPrefs()
+  const visible = useSceneVisible()
   const chars = useMemo(() => Array.from(text), [text])
   const [revealed, setRevealed] = useState(reduced ? chars.length : 0)
 
   useEffect(() => {
+    if (!visible) return undefined
     if (reduced) {
       setRevealed(chars.length)
       return undefined
@@ -30,7 +33,7 @@ export default function DecodeText({ text = '', as: Tag = 'span', className = ''
       if (frame >= total) window.clearInterval(id)
     }, 25)
     return () => window.clearInterval(id)
-  }, [chars, reduced])
+  }, [chars, reduced, visible])
 
   return (
     <Tag className={className} id={id} aria-label={text}>

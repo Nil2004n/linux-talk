@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { PALETTE } from '../lib/constants'
 import { DEFAULT_DISK_HEAD, DEFAULT_DISK_REQUESTS, DISK_ALGORITHMS, DISK_MAX, DISK_META, diskVerdict, scheduleDisk } from '../lib/os-sims/disk.js'
 import CompareTable from './CompareTable'
+import { useSceneVisible } from '../hooks/useSceneVisible'
 
 const HOP_MS = 420
 
@@ -27,6 +28,7 @@ export default function DiskHeadSim({
   const [runId, setRunId] = useState(0)
   const [reached, setReached] = useState(0)
   const [compare, setCompare] = useState(false)
+  const visible = useSceneVisible()
   const [algoB, setAlgoB] = useState('sstf')
   const [media, setMedia] = useState('hdd')
 
@@ -56,8 +58,9 @@ export default function DiskHeadSim({
       setReached(result.path.length - 1)
       return undefined
     }
+    if (!visible) { setReached(0); return undefined }
     setReached(0)
-    if (result.path.length < 2) return undefined
+    if (!visible || result.path.length < 2) return undefined
     const id = window.setInterval(() => {
       setReached((n) => {
         if (n >= result.path.length - 1) {
@@ -68,7 +71,7 @@ export default function DiskHeadSim({
       })
     }, HOP_MS)
     return () => window.clearInterval(id)
-  }, [reduced, result.path.length, runId, reqs, start, algo, direction])
+  }, [reduced, result.path.length, runId, reqs, start, algo, direction, visible])
 
   const headPos = result.path[Math.min(reached, result.path.length - 1)] ?? start
   const done = reached >= result.path.length - 1

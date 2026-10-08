@@ -1,225 +1,78 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 
 /**
- * Vertical scroll-snap navigation engine.
+ * Continuous-page navigation engine.
  *
- * - `railRef`    -> the scrolling container (attached in App)
- * - `slideRefs`  -> ref callback factory, one per slide
- * - `activeIndex`-> index of the slide currently filling the viewport
+ * - `railRef`        -> the wrapping <main> (kept for layout refs)
+ * - `registerSlide`  -> ref callback factory, one per section
+ * - `activeIndex`    -> index of the section currently most visible
  *
  * Keyboard, grid overview and part jumps all funnel through `goTo`, which
- * relies on native scroll-snap so trackpad/wheel gestures keep working.
+ * scrolls the document to the target section. Active-section detection uses
+ * an IntersectionObserver against the window.
  */
-function isScrollableElement(el, root) {
-  let curr = el
-  while (curr && curr !== root && curr !== document.body && curr !== document.documentElement) {
-    const style = window.getComputedStyle(curr)
-    const overflowY = style.overflowY
-    if (overflowY === 'auto' || overflowY === 'scroll') {
-      if (curr.scrollHeight > curr.clientHeight) {
-        return curr
-      }
-    }
-    curr = curr.parentElement
-  }
-  return null
-}
-
-export function useSlideNavigation(
-  slideCount,
-  { reduced = false, mode = 'slide', onStepNext, onStepPrev, stepHandlersRef } = {},
-) {
+export function useSlideNavigation(slideCount, { reduced = false } = {}) {
   const railRef = useRef(null)
   const slideRefs = useRef([])
   const [activeIndex, setActiveIndex] = useState(0)
-  const activeIndexRef = useRef(0)
-  const isTransitioningRef = useRef(false)
-  const unlockTimerRef = useRef(0)
-  const wheelAccumulatorRef = useRef(0)
-  const lastWheelTimeRef = useRef(0)
 
-  const callbacksRef = useRef({ onStepNext, onStepPrev })
-  useEffect(() => {
-    callbacksRef.current = { onStepNext, onStepPrev }
-  }, [onStepNext, onStepPrev])
-
-  useEffect(() => {
-    activeIndexRef.current = activeIndex
-  }, [activeIndex])
-
-  const registerSlide = useCallback((index) => (el) => {
-    slideRefs.current[index] = el
-  }, [])
-
-  // Single authoritative transition dispatcher
-  const goTo = useCallback(
-    (target) => {
-      const rail = railRef.current
-      if (!rail) return
-      const index = Math.min(slideCount - 1, Math.max(0, target))
-      const prevIndex = activeIndexRef.current ?? 0
-
-      // Authoritative immediate update
-      activeIndexRef.current = index
-      setActiveIndex(index)
-
-      // Set transition lock
-      isTransitioningRef.current = true
-      window.clearTimeout(unlockTimerRef.current)
-
-      if (mode === 'scroll') {
-        slideRefs.current[index]?.scrollIntoView({
-          behavior: reduced ? 'auto' : 'smooth',
-          block: 'start',
-        })
-        unlockTimerRef.current = window.setTimeout(() => {
-          isTransitioningRef.current = false
-        }, reduced ? 40 : 400)
-        return
-      }
-
-      const h = rail.clientHeight || window.innerHeight || 1
-      const distance = Math.abs(index - prevIndex)
-      const behavior = reduced || distance > 2 ? 'auto' : 'smooth'
-
-      rail.scrollTo({ top: index * h, behavior })
-
-      // Guaranteed unlock after scroll settles
-      unlockTimerRef.current = window.setTimeout(() => {
-        isTransitioningRef.current = false
-        wheelAccumulatorRef.current = 0
-      }, behavior === 'auto' ? 40 : 360)
+  const registerSlide = useCallback(
+    (index) => (el) => {
+      slideRefs.current[index] = el
     },
-    [slideCount, reduced, mode],
+    [],
   )
 
-  const nextRef = useRef(null)
-  const prevRef = useRef(null)
-
-  const next = useCallback(() => {
-    isTransitioningRef.current = true
-    window.clearTimeout(unlockTimerRef.current)
-    unlockTimerRef.current = window.setTimeout(() => {
-      isTransitioningRef.current = false
-      wheelAccumulatorRef.current = 0
-    }, reduced ? 40 : 280)
-
-    const handleStep = stepHandlersRef?.current?.onStepNext ?? callbacksRef.current.onStepNext
-    if (handleStep) {
-      handleStep()
-    } else {
-      goTo(activeIndexRef.current + 1)
-    }
-  }, [goTo, stepHandlersRef, reduced])
-
-  const prev = useCallback(() => {
-    isTransitioningRef.current = true
-    window.clearTimeout(unlockTimerRef.current)
-    unlockTimerRef.current = window.setTimeout(() => {
-      isTransitioningRef.current = false
-      wheelAccumulatorRef.current = 0
-    }, reduced ? 40 : 280)
-
-    const handleStep = stepHandlersRef?.current?.onStepPrev ?? callbacksRef.current.onStepPrev
-    if (handleStep) {
-      handleStep()
-    } else {
-      goTo(activeIndexRef.current - 1)
-    }
-  }, [goTo, stepHandlersRef, reduced])
-
+  // A scene is active when it crosses a thin horizontal band near the top of
+  // the viewport. The band (not ratio thresholds) keeps the winner stable:
+  // exactly one scene owns the line at a time, and tall scenes can't lose to
+  // shorter neighbours just because their ratio is capped by viewport height.
+  // When two straddle the boundary, the one covering more of the band wins.
   useEffect(() => {
-    nextRef.current = next
-    prevRef.current = prev
-  }, [next, prev])
+    const observer = new IntersectionObserver(
+      (entries) => {
+        let best = null
+        entries.forEach((entry) => {
+          const index = Number(entry.target.dataset.slideIndex)
+          if (!Number.isInteger(index)) return
+          if (!entry.isIntersecting) return
+          const score = entry.intersectionRect.height
+          if (!best || score > best.score) best = { index, score }
+        })
+        if (best) {
+          setActiveIndex((prev) => (prev === best.index ? prev : best.index))
+        }
+      },
+      { rootMargin: '-40% 0px -55% 0px', threshold: 0 },
+    )
+    slideRefs.current.forEach((el) => {
+      if (el) observer.observe(el)
+    })
+    return () => observer.disconnect()
+  }, [slideCount])
 
+  const goTo = useCallback(
+    (target) => {
+      const index = Math.min(slideCount - 1, Math.max(0, target))
+      // Smooth-scroll one or two sections so the reader can follow the change.
+      // Long jumps (End, a part shortcut, the grid overview) go instantly:
+      // animating across twenty sections takes seconds the reader never asked for.
+      const distance = Math.abs(index - activeIndex)
+      slideRefs.current[index]?.scrollIntoView({
+        behavior: reduced || distance > 2 ? 'auto' : 'smooth',
+        block: 'start',
+      })
+      setActiveIndex(index)
+    },
+    [slideCount, reduced, activeIndex],
+  )
+
+  const next = useCallback(() => goTo(activeIndex + 1), [goTo, activeIndex])
+  const prev = useCallback(() => goTo(activeIndex - 1), [goTo, activeIndex])
   const first = useCallback(() => goTo(0), [goTo])
   const last = useCallback(() => goTo(slideCount - 1), [goTo, slideCount])
 
-  // Wheel handling in Slide mode
-  useEffect(() => {
-    if (mode !== 'slide') return undefined
-
-    const onWheel = (e) => {
-      // Intercept wheel in slide mode for deterministic slide step navigation
-      e.preventDefault()
-
-      const now = Date.now()
-      if (now - lastWheelTimeRef.current > 200) {
-        wheelAccumulatorRef.current = 0
-      }
-      lastWheelTimeRef.current = now
-
-      wheelAccumulatorRef.current += e.deltaY
-
-      if (isTransitioningRef.current) return
-
-      const THRESHOLD = 24
-      if (wheelAccumulatorRef.current >= THRESHOLD) {
-        wheelAccumulatorRef.current = 0
-        nextRef.current?.()
-      } else if (wheelAccumulatorRef.current <= -THRESHOLD) {
-        wheelAccumulatorRef.current = 0
-        prevRef.current?.()
-      }
-    }
-
-    window.addEventListener('wheel', onWheel, { passive: false })
-    return () => window.removeEventListener('wheel', onWheel)
-  }, [mode])
-
-  // Scroll mode observer / resize alignment
-  useEffect(() => {
-    const rail = railRef.current
-    if (!rail) return undefined
-
-    if (mode === 'scroll') {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          if (isTransitioningRef.current) return
-          let best = null
-          entries.forEach((entry) => {
-            const index = Number(entry.target.dataset.slideIndex)
-            if (!Number.isInteger(index)) return
-            if (entry.isIntersecting && (!best || entry.intersectionRatio > best.ratio)) {
-              best = { index, ratio: entry.intersectionRatio }
-            }
-          })
-          if (best && best.index !== activeIndexRef.current) {
-            activeIndexRef.current = best.index
-            setActiveIndex(best.index)
-          }
-        },
-        { root: rail, threshold: [0.1, 0.3, 0.5, 0.7, 0.9] },
-      )
-      slideRefs.current.forEach((el) => {
-        if (el) observer.observe(el)
-      })
-      return () => observer.disconnect()
-    }
-
-    const onResize = () => {
-      const h = rail.clientHeight || 1
-      rail.scrollTo({ top: activeIndexRef.current * h, behavior: 'auto' })
-    }
-    window.addEventListener('resize', onResize)
-
-    return () => {
-      window.removeEventListener('resize', onResize)
-    }
-  }, [slideCount, mode])
-
-  return {
-    railRef,
-    registerSlide,
-    activeIndex,
-    goTo,
-    next,
-    prev,
-    first,
-    last,
-    isTransitioning: isTransitioningRef,
-  }
+  return { railRef, registerSlide, activeIndex, goTo, next, prev, first, last }
 }
 
 /**
@@ -343,46 +196,13 @@ export function useFullscreen() {
     const el = document.documentElement
     if (!document.fullscreenEnabled) return
     if (document.fullscreenElement) {
-      document.exitFullscreen?.().catch(() => { })
+      document.exitFullscreen?.().catch(() => {})
     } else {
-      el.requestFullscreen?.().catch(() => { })
+      el.requestFullscreen?.().catch(() => {})
     }
   }, [])
 
   return { isFullscreen, toggle, supported: typeof document !== 'undefined' && document.fullscreenEnabled }
-}
-
-/**
- * Presentation mode with a persisted preference.
- *
- * `slide` is the default snap-driven deck. `scroll` is a continuous
- * scroll-storytelling layout. On small or coarse-pointer viewports the deck
- * starts in scroll mode unless the presenter has explicitly chosen slide mode.
- */
-export function usePresentationMode() {
-  const storageKey = 'deck.mode'
-  const [mode, setMode] = useState(() => {
-    if (typeof window === 'undefined') return 'slide'
-    const stored = window.localStorage.getItem(storageKey)
-    if (stored === 'slide' || stored === 'scroll') return stored
-    const coarse = window.matchMedia?.('(pointer: coarse)').matches ?? false
-    const narrow = window.matchMedia?.('(max-width: 768px)').matches ?? false
-    return coarse || narrow ? 'scroll' : 'slide'
-  })
-
-  useEffect(() => {
-    try {
-      window.localStorage.setItem(storageKey, mode)
-    } catch {
-      // Private browsing or a locked-down kiosk should never break navigation.
-    }
-  }, [mode])
-
-  const toggleMode = useCallback(() => {
-    setMode((m) => (m === 'slide' ? 'scroll' : 'slide'))
-  }, [])
-
-  return { mode, setMode, toggleMode }
 }
 
 /** Persisted boolean flags (presenter mode, help overlay...). */
